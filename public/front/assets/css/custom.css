@@ -704,6 +704,12 @@ form .otp_section input {
   font-size: 16px;
   padding-top: 25px;
 }
+form.personality_anaylysis {
+  width: 50%;
+}
+form.personality_anaylysis .info_btn1 {
+  min-width: 190px;
+}
 .dash_right_inner.info.upload_docs .profile-anaylist-item {
   justify-content: center;
 }
@@ -961,6 +967,7 @@ img.prof_img_dash {
   align-items: center;
   text-align: center;
   padding: 15px;
+  height: 100%;
 }
 .pd2_detail h4 {
   padding: 0;
@@ -1047,6 +1054,9 @@ img.prof_img_dash {
   padding: 20px 25px;
   margin-bottom: 13px;
 }
+.pd_sec5 .tag {
+  margin-right: 0;
+}
 .pd_sec5 h3 {
   padding-bottom: 10px;
 }
@@ -1107,6 +1117,65 @@ img.prof_img_dash {
   height: 100%;
   background: #8e5610;
 }
+
+
+.custom-radio {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin-bottom: 4px;
+}
+
+.custom-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  z-index: 2;
+}
+
+.custom-radio .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #8e5610;
+  border-radius: 100%;
+}
+
+.custom-radio input:checked + .checkmark:after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 50%;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  border: solid #fff;
+  border-width: 3px;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+}
+
+.custom-radio input:checked + .checkmark:before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background: #8e5610;
+}
+
 
 /* status section css */
 .status_dash {
@@ -1274,7 +1343,7 @@ img.prof_img_dash {
   border-radius: 20px;
 }
 .saved_jobs_right h3 {
-  font-size: 1.2vw;
+  font-size: 18px;
   font-family: "Poppins";
   font-weight: 500;
 }
@@ -1285,7 +1354,7 @@ img.prof_img_dash {
   padding: 8px 0;
 }
 .saved_jobs_right h4 {
-  font-size: 0.85vw;
+  font-size: 13px;
   font-family: "Poppins";
   font-weight: 400;
   color: #181818;
@@ -1785,6 +1854,7 @@ select {
   gap: 20px;
   min-width: 180px;
   text-align: center;
+  align-items: center;
 }
 /* Custom icon */
 .step_select::after {
@@ -1818,6 +1888,9 @@ select {
   border-radius: 10px;
   margin-bottom: 20px;
 }
+.add_expe {
+  width: 600px;
+}
 .add_skills_container h4 {
   font-size: 16px;
   font-family: "Poppins";
@@ -1844,7 +1917,7 @@ select {
   font-size: 16px;
 }
 .asc_top span {
-  width: 25px;
+  min-width: 25px;
   height: 25px;
   background-color: #ccc;
   border-radius: 50%;
@@ -1894,7 +1967,7 @@ select {
   height: 100%;
   border-radius: 14px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   font-family: "Open Sans";
   font-weight: 500;
@@ -2036,6 +2109,7 @@ select {
 }
 .add_job_type.ajt_table .table-responsive::-webkit-scrollbar {
   width: 5px;
+  height: 5px;
 }
 
 .add_asc_btn {
@@ -2048,6 +2122,9 @@ select {
 
 #forward_link .title {
   width: 50%;
+}
+.menu_mobile {
+  display: none;
 }
 
 @media only screen and (max-width: 1550px) {
@@ -2082,7 +2159,8 @@ select {
   .sjl_item_tags h4 {
     font-size: 9px;
   }
-  .sidebar_inner ul {
+  .sidebar_inner ul,
+  .ds_inner2 ul {
     padding: 0 0 0 40px;
   }
   .saved_job_dashboard {
@@ -2099,6 +2177,9 @@ select {
     width: 150px;
     height: 90px;
   }
+  .sjd_h2 {
+    font-size: 25px;
+  }
 }
 @media only screen and (max-width: 1399px) {
   .dash_right_inner.info {
@@ -2106,10 +2187,22 @@ select {
   }
 }
 @media only screen and (max-width: 1299px) {
-  .profile-anaylist-item {
+  /* .profile-anaylist-item {
     width: 100%;
     height: 100%;
     gap: 20px;
+  } */
+  .info_btn1 {
+    width: unset;
+    max-width: 50%;
+  }
+  form.personality_anaylysis {
+    width: 70%;
+  }
+  .choose_radio {
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 10px;
   }
 }
 @media only screen and (max-width: 1250px) {
@@ -2124,7 +2217,140 @@ select {
     width: 100%;
     grid-template-columns: 0fr;
   }
+  .dashboard_container {
+    display: flex;
+    flex-direction: column;
+  }
+  .dashboard_container .dash_sidebar {
+    height: unset;
+    justify-content: unset;
+  }
+  .dashboard_container .sidebar_inner {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 0 30px;
+    align-items: end;
+    width: 100%;
+  }
+  .sidebar_inner > img {
+    width: 170px;
+    margin: 0;
+  }
+  .sidebar_inner ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: end;
+  }
+  .sidebar_inner ul li {
+    margin: 0;
+  }
+  .sidebar_inner ul li a span {
+    font-size: 13px;
+  }
+  .sidebar_inner ul li a img {
+    width: 15px;
+    height: 15px;
+  }
+  .dashboard_container .dash_sidebar {
+    flex-direction: row;
+    align-items: end;
+  }
+  .ds_inner2 {
+    display: none;
+  }
+  .menu_mobile {
+    display: block;
+  }
 }
+@media only screen and (max-width: 768px) {
+  .saved_jobs_left {
+    margin-bottom: 25px;
+  }
+  .saved_jobs_left::-webkit-scrollbar {
+    height: 10px;
+  }
+  .sjl_item p {
+    margin: 7px 0;
+  }
+  .sjl_item h4 {
+    font-size: 17px;
+  }
+  .sjl_item {
+    padding: 15px;
+    padding: 15px;
+    min-width: 45%;
+  }
+  .sjl_itm_label_container label,
+  .sjl_item_tags h4 {
+    font-size: 9px;
+  }
+  .sjl_item .sjl_profile {
+    width: 80px;
+    height: 80px;
+  }
+  .saved_jobs_left {
+    overflow: hidden;
+    overflow-x: scroll;
+    display: flex;
+    gap: 15px;
+  }
+
+  .status2_container {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .status2_container h4 {
+    font-size: 13px;
+  }
+  .dashboard_container .sidebar_inner {
+    margin: 0 30px;
+    align-items: center;
+  }
+  button.toggle_btn {
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  .sidebar_inner ul {
+    position: absolute;
+    flex-direction: column;
+    right: 30px;
+    top: 90px;
+    background: #000;
+    width: 40%;
+    border-radius: 17px;
+    padding: 20px;
+    z-index: -1;
+  }
+  .menu-transition {
+    min-width: 250px;
+    opacity: 0;
+    overflow: hidden;
+    transition: min-width 0.3s ease, opacity 0.3s ease;
+  }
+
+  .menu-transition.show {
+    min-width: 250px;
+    opacity: 1;
+    z-index: 1;
+  }
+  .sidebar_inner > img {
+    width: 150px;
+  }
+  .dashboard_container .dash_sidebar {
+    padding: 20px 0;
+  }
+}
+@media only screen and (max-width: 678px) {
+  .add_expe {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 576px) {
   .info_check_inner,
   .choose_radio {
@@ -2135,6 +2361,62 @@ select {
   .info_in_ch {
     flex-direction: column;
     align-items: start !important;
+  }
+  .sjl_item {
+    min-width: 100%;
+  }
+  .filter_top .sjl_itm_label_container,
+  .status2_container {
+    flex-wrap: nowrap;
+    overflow: hidden;
+    overflow-x: scroll;
+    padding-bottom: 10px;
+  }
+  .sjl_itm_label_container label {
+    white-space: nowrap;
+  }
+  .filter_top .sjl_itm_label_container::-webkit-scrollbar,
+  .status2_container::-webkit-scrollbar {
+    height: 5px;
+  }
+  #comfirm_detail .modal-content {
+    padding: 20px;
+  }
+  .proflie_details h5 {
+    font-size: 15px;
+  }
+  .proflie_details h5 span {
+    font-size: 17px;
+  }
+  .modal_btn_container {
+    flex-direction: column;
+    gap: 15px !important;
+    align-items: center;
+  }
+  .profile_dashboard .pd_sec1 .profile_cover_img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .pd_sec1_top {
+    flex-direction: column;
+  }
+  .pricing_prof {
+    display: flex;
+  }
+  .dash_prof_social {
+    padding: 10px 0;
+  }
+  .dash_prof_social li {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+  }
+  .pricing_prof h2 {
+    padding: 0 !important;
+  }
+  .pricing_prof {
+    justify-content: space-between;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -2150,5 +2432,62 @@ select {
   }
   .info_input {
     width: 100%;
+  }
+  form.personality_anaylysis {
+    width: 100%;
+  }
+  .sjl_item {
+    min-width: 100%;
+  }
+  .saved_job_dashboard {
+    padding: 25px 15px;
+    overflow: hidden;
+  }
+  .sjl_item.dpp {
+    padding: 15px;
+  }
+  .modal-content .title h2 {
+    font-size: 20px;
+  }
+  .modal-content .title p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .pricing_prof {
+    flex-direction: column;
+    align-items: start;
+    gap: 14px;
+  }
+  .profile_dashboard .pd_sec1 img.prof_img_dash {
+    margin-left: 20px;
+  }
+  .add_skills_container h4 {
+    font-size: 14px;
+  }
+  .proflie_details input[type="text"] {
+    width: 100%;
+  }
+  .profile_dp {
+    flex-direction: column;
+    align-items: start;
+  }
+  .proflie_details {
+    padding: 30px 0 10px;
+  }
+  .proflie_details table tr th,
+  .proflie_details table tr td {
+    padding: 10px 0;
+  }
+  .custom_radio label {
+    font-size: 15px;
+    gap: 10px;
+    white-space: nowrap;
+  }
+  .custom_radio label img {
+    width: 15px;
+  }
+
+  .custom_radio {
+    min-width: 150px;
   }
 }
