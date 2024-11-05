@@ -15,21 +15,30 @@ include 'includes/header.php';
                     <label for="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam?</label>
                     <div class="info_check_container">
                         <div class=" choose_radio">
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <div class="w25 px-0 d-flex align-items-center gap-2">
+                                <div class="custom-radio">
+                                    <input class="form-check-input" type="radio" type="radio" name="flexRadioDefault10" id="flexRadioDefault1">
+                                    <div class="checkmark"></div>
+                                </div>
                                 <label class="form-check-label" for="flexRadioDefault1">
                                     Option - 1
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <div class="w25 px-0 d-flex align-items-center gap-2">
+                                <div class="custom-radio">
+                                    <input class="form-check-input" type="radio" type="radio" name="flexRadioDefault10" id="flexRadioDefault2">
+                                    <div class="checkmark"></div>
+                                </div>
                                 <label class="form-check-label" for="flexRadioDefault2">
                                     Option - 2
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                <label class="form-check-label" for="flexRadioDefault2">
+                            <div class="w25 px-0 d-flex align-items-center gap-2">
+                                <div class="custom-radio">
+                                    <input class="form-check-input" type="radio" type="radio" name="flexRadioDefault10" id="flexRadioDefault3">
+                                    <div class="checkmark"></div>
+                                </div>
+                                <label class="form-check-label" for="flexRadioDefault3">
                                     Option - 3
                                 </label>
                             </div>
@@ -41,21 +50,30 @@ include 'includes/header.php';
                     <label for="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam?</label>
                     <div class="info_check_container">
                         <div class=" choose_radio">
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
+                            <div class="w25 px-0 d-flex align-items-center gap-2">
+                                <div class="custom-radio">
+                                    <input class="form-check-input" type="radio" type="radio" name="flexRadioDefault30" id="flexRadioDefault33">
+                                    <div class="checkmark"></div>
+                                </div>
+                                <label class="form-check-label" for="flexRadioDefault33">
                                     Option - 1
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                <label class="form-check-label" for="flexRadioDefault2">
+                            <div class="w25 px-0 d-flex align-items-center gap-2">
+                                <div class="custom-radio">
+                                    <input class="form-check-input" type="radio" type="radio" name="flexRadioDefault30" id="flexRadioDefault34">
+                                    <div class="checkmark"></div>
+                                </div>
+                                <label class="form-check-label" for="flexRadioDefault34">
                                     Option - 2
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                <label class="form-check-label" for="flexRadioDefault2">
+                            <div class="w25 px-0 d-flex align-items-center gap-2">
+                                <div class="custom-radio">
+                                    <input class="form-check-input" type="radio" type="radio" name="flexRadioDefault30" id="flexRadioDefault35">
+                                    <div class="checkmark"></div>
+                                </div>
+                                <label class="form-check-label" for="flexRadioDefault35">
                                     Option - 3
                                 </label>
                             </div>
@@ -67,21 +85,30 @@ include 'includes/header.php';
                     <label for="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam?</label>
                     <div class="info_check_container">
                         <div class=" choose_radio">
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
+                            <div class="w25 px-0 d-flex align-items-center gap-2">
+                                <div class="custom-radio">
+                                    <input class="form-check-input" type="radio" type="radio" name="flexRadioDefault20" id="flexRadioDefault22">
+                                    <div class="checkmark"></div>
+                                </div>
+                                <label class="form-check-label" for="flexRadioDefault22">
                                     Option - 1
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                <label class="form-check-label" for="flexRadioDefault2">
+                            <div class="w25 px-0 d-flex align-items-center gap-2">
+                                <div class="custom-radio">
+                                    <input class="form-check-input" type="radio" type="radio" name="flexRadioDefault20" id="flexRadioDefault23">
+                                    <div class="checkmark"></div>
+                                </div>
+                                <label class="form-check-label" for="flexRadioDefault23">
                                     Option - 2
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                <label class="form-check-label" for="flexRadioDefault2">
+                            <div class="w25 px-0 d-flex align-items-center gap-2">
+                                <div class="custom-radio">
+                                    <input class="form-check-input" type="radio" type="radio" name="flexRadioDefault20" id="flexRadioDefault24">
+                                    <div class="checkmark"></div>
+                                </div>
+                                <label class="form-check-label" for="flexRadioDefault24">
                                     Option - 3
                                 </label>
                             </div>

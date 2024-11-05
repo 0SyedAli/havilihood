@@ -11,7 +11,7 @@ include 'includes/header.php';
             <h2>Signup</h2>
             <p>Enter your details</p>
             <form action="javascript:;">
-                <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center justify-content-between pb-4">
                     <div class="w25 px-0 d-flex align-items-center gap-2">
                         <div class="custom-radio">
                             <input class="form-check-input" type="radio" type="radio" name="flexRadioDefault" id="flexRadioDefault1">

@@ -18,27 +18,39 @@ include 'includes/header.php';
                     <label for="">Job title <span>*</span></label>
                     <div class="info_check_inner">
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
+                        <div class="w25 px-0 d-flex align-items-center gap-2">
+                            <div class="custom-checkbox">
+                                <input class="form-check-input" type="checkbox" value="" id="check15">
+                                <div class="checkmark"></div>
+                            </div>
+                            <label class="form-check-label" for="check12">
                                 Full Time
                             </label>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked12" checked>
-                            <label class="form-check-label" for="flexCheckChecked12">
+                        <div class="w25 px-0 d-flex align-items-center gap-2">
+                            <div class="custom-checkbox">
+                                <input class="form-check-input" type="checkbox" value="" id="check15">
+                                <div class="checkmark"></div>
+                            </div>
+                            <label class="form-check-label" for="check12">
                                 Contract
                             </label>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault123">
-                            <label class="form-check-label" for="flexCheckDefault123">
+                        <div class="w25 px-0 d-flex align-items-center gap-2">
+                            <div class="custom-checkbox">
+                                <input class="form-check-input" type="checkbox" value="" id="check15">
+                                <div class="checkmark"></div>
+                            </div>
+                            <label class="form-check-label" for="check12">
                                 Part Time
                             </label>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1234" checked>
-                            <label class="form-check-label" for="flexCheckChecked1234">
+                        <div class="w25 px-0 d-flex align-items-center gap-2">
+                            <div class="custom-checkbox">
+                                <input class="form-check-input" type="checkbox" value="" id="check15">
+                                <div class="checkmark"></div>
+                            </div>
+                            <label class="form-check-label" for="check12">
                                 Internship
                             </label>
                         </div>
@@ -54,19 +66,26 @@ include 'includes/header.php';
                             <option value="3">Three</option>
                         </select>
                     </div>
-                    <div class="form-check info_check_label">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked12345" checked>
-                        <label class="form-check-label" for="flexCheckChecked12345">
-                        Open to Remote
+                    <div class="w25 px-0 d-flex align-items-center gap-2 info_check_label">
+                        <div class="custom-checkbox">
+                            <input class="form-check-input" type="checkbox" value="" id="check15">
+                            <div class="checkmark"></div>
+                        </div>
+                        <label class="form-check-label" for="check12">
+                            Open to Remote
                         </label>
                     </div>
                 </div>
                 <div class="info_check_container">
-                    <label for="">Work Authorization <span>*</span></label>
+                    <label for="">Work Authorization <span><img src="assets/images/file-question-01.png" width="30" alt=""></span></label>
                     <div class="info_check_inner">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault231">
-                            <label class="form-check-label" for="flexCheckDefault231">
+
+                        <div class="w25 px-0 d-flex align-items-center gap-2">
+                            <div class="custom-checkbox">
+                                <input class="form-check-input" type="checkbox" value="" id="check15">
+                                <div class="checkmark"></div>
+                            </div>
+                            <label class="form-check-label" for="check12">
                                 H1B Sponsorship
                             </label>
                         </div>
