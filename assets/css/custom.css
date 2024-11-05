@@ -1147,21 +1147,21 @@ img.prof_img_dash {
   width: 100%;
   background-color: transparent;
   border: 1px solid #8e5610;
-  border-radius: 3px;
+  border-radius: 100%;
 }
 
 .custom-radio input:checked + .checkmark:after {
   content: "";
   position: absolute;
   display: block;
-  left: 5px;
-  top: 2px;
-  width: 7px;
+  left: 50%;
+  top: 50%;
+  width: 12px;
   height: 12px;
   border: solid #fff;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
-  border-radius: 3px;
+  border-width: 3px;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
 }
 
 .custom-radio input:checked + .checkmark:before {
@@ -1172,6 +1172,7 @@ img.prof_img_dash {
   left: 0;
   width: 100%;
   height: 100%;
+  border-radius: 100%;
   background: #8e5610;
 }
 
