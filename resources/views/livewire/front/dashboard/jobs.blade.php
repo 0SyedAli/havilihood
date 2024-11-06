@@ -1,4 +1,5 @@
 <section class="dashboard_container">
+    @section('dash-jobs','active')
     <livewire:front.dashboard.side-section />
     <div class="dashboard_display">
         <div class="saved_job_dashboard">

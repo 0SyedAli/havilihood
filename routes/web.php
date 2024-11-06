@@ -25,6 +25,9 @@ Route::group( ['prefix'=>'dashboard'], function () {
     Route::get('/profile-preference', ProfilePref::class)->name('profile.pref');
 
 });
+Route::group( ['prefix'=>'dashboard'], function () {
+
+});
 
 Route::group( ['prefix'=>'candidate','as' => 'candidate.'], function () {
     Route::get('/login', Home::class);

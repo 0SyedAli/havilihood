@@ -88,7 +88,7 @@
                             </div>
                         </div>
                         <button class="add_asc_btn">
-                            <img src="assets/images/plus_round_brown.png" alt="">
+                            <img src="{{asset('front/assets/images/plus_round_brown.png')}}" alt="">
                             Add you question
                         </button>
                     </div>

@@ -5,31 +5,31 @@
             <i class="fa-solid fa-bars"></i>
         </button>
         <ul id="menu" class="menu-transition">
-            <li class=" active">
+            <li class=" @yield('dash-jobs')">
                 <a href="{{route('jobs')}}" wire:navigate.hover>
-                    <img src="{{asset('front/assets/images/prof_side.png')}}" alt="">
+                    <img src="{{asset('front/assets/images/job.png')}}" alt="">
                     <span>Jobs</span>
                 </a>
             </li>
-            <li class="active">
+            <li class="@yield('dash-job-posted')">
                 <a href="{{route('job.posted')}}" wire:navigate.hover>
-                    <img src="{{asset('front/assets/images/prof_side.png')}}" alt="">
+                    <img src="{{asset('front/assets/images/job_posted.png')}}" alt="">
                     <span>Jobs Posted</span>
                 </a>
             </li>
-            <li class="active">
+            <li class="@yield('dash-profile')">
                 <a href="{{route('profile.pref')}}" wire:navigate.hover>
                     <img src="{{asset('front/assets/images/prof_side.png')}}" alt="">
                     <span>Profile Preferences</span>
                 </a>
             </li>
-            <li class="active">
+            <li class="@yield('dash-candidates')">
                 <a href="{{route('candidates')}}" wire:navigate.hover>
                     <img src="{{asset('front/assets/images/prof_side.png')}}" alt="">
                     <span>Candidates</span>
                 </a>
             </li>
-            <li class="active menu_mobile">
+            <li class="@yield('dash-setting') menu_mobile">
                 <a href="settings">
                     <img src="{{asset('front/assets/images/prof_side.png')}}" alt="">
                     <span>Logout</span>

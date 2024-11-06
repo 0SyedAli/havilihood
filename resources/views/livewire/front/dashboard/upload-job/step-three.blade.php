@@ -12,42 +12,42 @@
                                 <div class="custom_radio">
                                     <input type="radio" id="full_time" name="cr_job_type">
                                     <label for="full_time">
-                                        <img src="assets/images/plus.png" alt="">
+                                        <img src="{{asset('front/assets/images/plus.png')}}" alt="">
                                         Full Time
                                     </label>
                                 </div>
                                 <div class="custom_radio">
                                     <input type="radio" id="part_time" name="cr_job_type">
                                     <label for="part_time">
-                                        <img src="assets/images/plus.png" alt="">
+                                        <img src="{{asset('front/assets/images/plus.png')}}" alt="">
                                         Part Time
                                     </label>
                                 </div>
                                 <div class="custom_radio">
                                     <input type="radio" id="contract" name="cr_job_type">
                                     <label for="contract">
-                                        <img src="assets/images/plus.png" alt="">
+                                        <img src="{{asset('front/assets/images/plus.png')}}" alt="">
                                         Contract
                                     </label>
                                 </div>
                                 <div class="custom_radio">
                                     <input type="radio" id="freelance" name="cr_job_type">
                                     <label for="freelance">
-                                        <img src="assets/images/plus.png" alt="">
+                                        <img src="{{asset('front/assets/images/plus.png')}}" alt="">
                                         Freelance
                                     </label>
                                 </div>
                                 <div class="custom_radio">
                                     <input type="radio" id="internship" name="cr_job_type">
                                     <label for="internship">
-                                        <img src="assets/images/plus.png" alt="">
+                                        <img src="{{asset('front/assets/images/plus.png')}}" alt="">
                                         Internship
                                     </label>
                                 </div>
                                 <div class="custom_radio">
                                     <input type="radio" id="temporary" name="cr_job_type">
                                     <label for="temporary">
-                                        <img src="assets/images/plus.png" alt="">
+                                        <img src="{{asset('front/assets/images/plus.png')}}" alt="">
                                         Temporary
                                     </label>
                                 </div>
@@ -77,28 +77,28 @@
                                 <div class="custom_radio">
                                     <input type="radio" id="full_time" name="cr_job_type">
                                     <label for="full_time">
-                                        <img src="assets/images/plus.png" alt="">
+                                        <img src="{{asset('front/assets/images/plus.png')}}" alt="">
                                         8 hour shift
                                     </label>
                                 </div>
                                 <div class="custom_radio">
                                     <input type="radio" id="part_time" name="cr_job_type">
                                     <label for="part_time">
-                                        <img src="assets/images/plus.png" alt="">
+                                        <img src="{{asset('front/assets/images/plus.png')}}" alt="">
                                         4 hour shift
                                     </label>
                                 </div>
                                 <div class="custom_radio">
                                     <input type="radio" id="contract" name="cr_job_type">
                                     <label for="contract">
-                                        <img src="assets/images/plus.png" alt="">
+                                        <img src="{{asset('front/assets/images/plus.png')}}" alt="">
                                         Monday to Friday
                                     </label>
                                 </div>
                                 <div class="custom_radio">
                                     <input type="radio" id="freelance" name="cr_job_type">
                                     <label for="freelance">
-                                        <img src="assets/images/plus.png" alt="">
+                                        <img src="{{asset('front/assets/images/plus.png')}}" alt="">
                                         12 hour shift
                                     </label>
                                 </div>
