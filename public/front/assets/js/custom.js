@@ -4,8 +4,8 @@ AOS.init({
 
 // text edtior start
 
-ClassicEditor.create(document.querySelector("#editor")).catch((error) => {
-  console.error(error);
-});
+// ClassicEditor.create(document.querySelector("#editor")).catch((error) => {
+//   console.error(error);
+// });
 
 // text edtior end
