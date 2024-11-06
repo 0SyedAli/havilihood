@@ -19,10 +19,15 @@ class Register extends Component
     #[Validate('required|string|max:191|email|unique:users,email')]
     public $email = '';
 
-    #[Validate('required|string|max:191|min:6|confirmed')]
+    #[Validate('required|string|max:191|min:6')]
     public $password = '';
 
+    #[Validate('required|string|max:191|same:password')]
     public $password_confirmation = '';
+
+    public function mount(){
+
+    }
 
     public function register()
     {

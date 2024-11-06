@@ -13,16 +13,21 @@ class Login extends Component
 
     #[Validate('required|string|min:6|max:191|')]
     public $password = '';
+    public $remember = false;
+
+    public function mount(){
+    }
 
     public function login(){
+
         $this->validate();
         $credentials = [
             'email' => $this->email,
             'password' => $this->password,
         ];
 
-        if (Auth::attempt($credentials)) {
-             $this->redirectIntended('dashboard');
+        if (Auth::attempt($credentials,$this->remember)) {
+            $this->redirectIntended('dashboard');
         }
 
 

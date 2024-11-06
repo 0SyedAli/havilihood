@@ -51,37 +51,37 @@
                                             <div class="d-flex align-items-center  pt-4 flex-wrap gap-3 gap-sm-0">
                                                 <div class="w25 px-0 d-flex align-items-center gap-2">
                                                     <div class="custom-checkbox">
-                                                        <input class="form-check-input" type="checkbox" value="" id="check15">
+                                                        <input class="form-check-input" type="checkbox" value="" id="job_type1">
                                                         <div class="checkmark"></div>
                                                     </div>
-                                                    <label class="form-check-label" for="check12">
+                                                    <label class="form-check-label" for="job_type1">
                                                         Full Time
                                                     </label>
                                                 </div>
                                                 <div class="w25 px-0 d-flex align-items-center gap-2">
                                                     <div class="custom-checkbox">
-                                                        <input class="form-check-input" type="checkbox" value="" id="check15">
+                                                        <input class="form-check-input" type="checkbox" value="" id="job_type2">
                                                         <div class="checkmark"></div>
                                                     </div>
-                                                    <label class="form-check-label" for="check13">
+                                                    <label class="form-check-label" for="job_type2">
                                                         Part Time
                                                     </label>
                                                 </div>
                                                 <div class="w25 px-0 d-flex align-items-center gap-2">
                                                     <div class="custom-checkbox">
-                                                        <input class="form-check-input" type="checkbox" value="" id="check15">
+                                                        <input class="form-check-input" type="checkbox" value="" id="job_type3">
                                                         <div class="checkmark"></div>
                                                     </div>
-                                                    <label class="form-check-label" for="check14">
+                                                    <label class="form-check-label" for="job_type3">
                                                         Internship
                                                     </label>
                                                 </div>
                                                 <div class="w25 px-0 d-flex align-items-center gap-2">
                                                     <div class="custom-checkbox">
-                                                        <input class="form-check-input" type="checkbox" value="" id="check15">
+                                                        <input class="form-check-input" type="checkbox" value="" id="job_type4">
                                                         <div class="checkmark"></div>
                                                     </div>
-                                                    <label class="form-check-label" for="check15">
+                                                    <label class="form-check-label" for="job_type4">
                                                         Contract
                                                     </label>
                                                 </div>
@@ -92,28 +92,28 @@
                                             <div class="d-flex align-items-center  pt-4 flex-wrap gap-3 gap-sm-0">
                                                 <div class="w25 px-0 d-flex align-items-center gap-2">
                                                     <div class="custom-checkbox">
-                                                        <input class="form-check-input" type="checkbox" value="" id="check15">
+                                                        <input class="form-check-input" type="checkbox" value="" id="work_model1">
                                                         <div class="checkmark"></div>
                                                     </div>
-                                                    <label class="form-check-label" for="check16">
+                                                    <label class="form-check-label" for="work_model1">
                                                         Onsite
                                                     </label>
                                                 </div>
                                                 <div class="w25 px-0 d-flex align-items-center gap-2">
                                                     <div class="custom-checkbox">
-                                                        <input class="form-check-input" type="checkbox" value="" id="check15">
+                                                        <input class="form-check-input" type="checkbox" value="" id="work_model2">
                                                         <div class="checkmark"></div>
                                                     </div>
-                                                    <label class="form-check-label" for="check17">
+                                                    <label class="form-check-label" for="work_model2">
                                                         Remote
                                                     </label>
                                                 </div>
                                                 <div class="w25 px-0 d-flex align-items-center gap-2">
                                                     <div class="custom-checkbox">
-                                                        <input class="form-check-input" type="checkbox" value="" id="check15">
+                                                        <input class="form-check-input" type="checkbox" value="" id="work_model3">
                                                         <div class="checkmark"></div>
                                                     </div>
-                                                    <label class="form-check-label" for="check18">
+                                                    <label class="form-check-label" for="work_model3">
                                                         Hybrid
                                                     </label>
                                                 </div>
@@ -136,55 +136,55 @@
                                             <div class="d-flex flex-wrap gap-3 align-items-center  pt-4">
                                                 <div class="w25 px-0 d-flex align-items-center gap-2">
                                                     <div class="custom-checkbox">
-                                                        <input class="form-check-input" type="checkbox" value="" id="check15">
+                                                        <input class="form-check-input" type="checkbox" value="" id="exp_level1">
                                                         <div class="checkmark"></div>
                                                     </div>
-                                                    <label class="form-check-label" for="check16">
+                                                    <label class="form-check-label" for="exp_level1">
                                                         Internship
                                                     </label>
                                                 </div>
                                                 <div class="w25 px-0 d-flex align-items-center gap-2">
                                                     <div class="custom-checkbox">
-                                                        <input class="form-check-input" type="checkbox" value="" id="check15">
+                                                        <input class="form-check-input" type="checkbox" value="" id="exp_level2">
                                                         <div class="checkmark"></div>
                                                     </div>
-                                                    <label class="form-check-label" for="check17">
+                                                    <label class="form-check-label" for="exp_level2">
                                                         Entry Level
                                                     </label>
                                                 </div>
                                                 <div class="w25 px-0 d-flex align-items-center gap-2">
                                                     <div class="custom-checkbox">
-                                                        <input class="form-check-input" type="checkbox" value="" id="check15">
+                                                        <input class="form-check-input" type="checkbox" value="" id="exp_level3">
                                                         <div class="checkmark"></div>
                                                     </div>
-                                                    <label class="form-check-label" for="check18">
+                                                    <label class="form-check-label" for="exp_level3">
                                                         Mid Level
                                                     </label>
                                                 </div>
                                                 <div class="w25 px-0 d-flex align-items-center gap-2">
                                                     <div class="custom-checkbox">
-                                                        <input class="form-check-input" type="checkbox" value="" id="check15">
+                                                        <input class="form-check-input" type="checkbox" value="" id="exp_level4">
                                                         <div class="checkmark"></div>
                                                     </div>
-                                                    <label class="form-check-label" for="check18">
+                                                    <label class="form-check-label" for="exp_level4">
                                                         Senior Level
                                                     </label>
                                                 </div>
                                                 <div class="w25 px-0 d-flex align-items-center gap-2">
                                                     <div class="custom-checkbox">
-                                                        <input class="form-check-input" type="checkbox" value="" id="check15">
+                                                        <input class="form-check-input" type="checkbox" value="" id="exp_level5">
                                                         <div class="checkmark"></div>
                                                     </div>
-                                                    <label class="form-check-label" for="check18">
+                                                    <label class="form-check-label" for="exp_level5">
                                                         Director
                                                     </label>
                                                 </div>
                                                 <div class="w25 px-0 d-flex align-items-center gap-2">
                                                     <div class="custom-checkbox">
-                                                        <input class="form-check-input" type="checkbox" value="" id="check15">
+                                                        <input class="form-check-input" type="checkbox" value="" id="exp_level6">
                                                         <div class="checkmark"></div>
                                                     </div>
-                                                    <label class="form-check-label" for="check18">
+                                                    <label class="form-check-label" for="exp_level6">
                                                         Executive
                                                     </label>
                                                 </div>
@@ -214,37 +214,37 @@
                                             <div class="d-flex align-items-center  pt-4 flex-wrap gap-3 gap-sm-0">
                                                 <div class="w25 px-0 d-flex align-items-center gap-2">
                                                     <div class="custom-checkbox">
-                                                        <input class="form-check-input" type="checkbox" value="" id="check15">
+                                                        <input class="form-check-input" type="checkbox" value="" id="date_posted1">
                                                         <div class="checkmark"></div>
                                                     </div>
-                                                    <label class="form-check-label" for="check12">
+                                                    <label class="form-check-label" for="date_posted1">
                                                         24 hour
                                                     </label>
                                                 </div>
                                                 <div class="w25 px-0 d-flex align-items-center gap-2">
                                                     <div class="custom-checkbox">
-                                                        <input class="form-check-input" type="checkbox" value="" id="check15">
+                                                        <input class="form-check-input" type="checkbox" value="" id="date_posted2">
                                                         <div class="checkmark"></div>
                                                     </div>
-                                                    <label class="form-check-label" for="check13">
+                                                    <label class="form-check-label" for="date_posted2">
                                                         3 Days
                                                     </label>
                                                 </div>
                                                 <div class="w25 px-0 d-flex align-items-center gap-2">
                                                     <div class="custom-checkbox">
-                                                        <input class="form-check-input" type="checkbox" value="" id="check15">
+                                                        <input class="form-check-input" type="checkbox" value="" id="date_posted3">
                                                         <div class="checkmark"></div>
                                                     </div>
-                                                    <label class="form-check-label" for="check14">
+                                                    <label class="form-check-label" for="date_posted3">
                                                         1 week
                                                     </label>
                                                 </div>
                                                 <div class="w25 px-0 d-flex align-items-center gap-2">
                                                     <div class="custom-checkbox">
-                                                        <input class="form-check-input" type="checkbox" value="" id="check15">
+                                                        <input class="form-check-input" type="checkbox" value="" id="date_posted4">
                                                         <div class="checkmark"></div>
                                                     </div>
-                                                    <label class="form-check-label" for="check15">
+                                                    <label class="form-check-label" for="date_posted4">
                                                         1 month
                                                     </label>
                                                 </div>
@@ -267,12 +267,12 @@
                                             <div class="w25 pt-4 pb-3 px-0 d-flex align-items-center gap-2">
                                                 <div class="custom-checkbox">
                                                     <div class="custom-checkbox">
-                                                        <input class="form-check-input" type="checkbox" value="" id="check15">
+                                                        <input class="form-check-input" type="checkbox" value="" id="work1">
                                                         <div class="checkmark"></div>
                                                     </div>
                                                     <div class="checkmark"></div>
                                                 </div>
-                                                <label class="form-check-label" for="check15">
+                                                <label class="form-check-label" for="work1">
                                                     H1B sponsorship
                                                 </label>
                                             </div>
@@ -288,10 +288,10 @@
                                             <div class="tag-labels">
                                                 <div class="w25 px-0 d-flex align-items-center gap-2">
                                                     <div class="custom-checkbox">
-                                                        <input class="form-check-input" type="checkbox" value="" id="check15">
+                                                        <input class="form-check-input" type="checkbox" value="" id="areas1">
                                                         <div class="checkmark"></div>
                                                     </div>
-                                                    <label class="form-check-label" for="check15">
+                                                    <label class="form-check-label" for="areas1">
                                                         Information Technology
                                                     </label>
                                                 </div>
@@ -300,10 +300,10 @@
                                             <div class="tag-labels">
                                                 <div class="w25 px-0 d-flex align-items-center gap-2">
                                                     <div class="custom-checkbox">
-                                                        <input class="form-check-input" type="checkbox" value="" id="check15">
+                                                        <input class="form-check-input" type="checkbox" value="" id="areas2">
                                                         <div class="checkmark"></div>
                                                     </div>
-                                                    <label class="form-check-label" for="check15">
+                                                    <label class="form-check-label" for="areas2">
                                                         Information Technology
                                                     </label>
                                                 </div>
@@ -312,10 +312,10 @@
                                             <div class="tag-labels">
                                                 <div class="w25 px-0 d-flex align-items-center gap-2">
                                                     <div class="custom-checkbox">
-                                                        <input class="form-check-input" type="checkbox" value="" id="check15">
+                                                        <input class="form-check-input" type="checkbox" value="" id="areas3">
                                                         <div class="checkmark"></div>
                                                     </div>
-                                                    <label class="form-check-label" for="check15">
+                                                    <label class="form-check-label" for="areas3">
                                                         Information Technology
                                                     </label>
                                                 </div>
@@ -324,10 +324,10 @@
                                             <div class="tag-labels">
                                                 <div class="w25 px-0 d-flex align-items-center gap-2">
                                                     <div class="custom-checkbox">
-                                                        <input class="form-check-input" type="checkbox" value="" id="check15">
+                                                        <input class="form-check-input" type="checkbox" value="" id="areas4">
                                                         <div class="checkmark"></div>
                                                     </div>
-                                                    <label class="form-check-label" for="check15">
+                                                    <label class="form-check-label" for="areas4">
                                                         Information Technology
                                                     </label>
                                                 </div>
@@ -336,10 +336,10 @@
                                             <div class="tag-labels">
                                                 <div class="w25 px-0 d-flex align-items-center gap-2">
                                                     <div class="custom-checkbox">
-                                                        <input class="form-check-input" type="checkbox" value="" id="check15">
+                                                        <input class="form-check-input" type="checkbox" value="" id="areas5">
                                                         <div class="checkmark"></div>
                                                     </div>
-                                                    <label class="form-check-label" for="check15">
+                                                    <label class="form-check-label" for="areas5">
                                                         Information Technology
                                                     </label>
                                                 </div>
@@ -356,10 +356,10 @@
                                             <div class="tag-labels">
                                                 <div class="w25 px-0 d-flex align-items-center gap-2">
                                                     <div class="custom-checkbox">
-                                                        <input class="form-check-input" type="checkbox" value="" id="check15">
+                                                        <input class="form-check-input" type="checkbox" value="" id="skills1">
                                                         <div class="checkmark"></div>
                                                     </div>
-                                                    <label class="form-check-label" for="check15">
+                                                    <label class="form-check-label" for="skills1">
                                                         Business Development
                                                     </label>
                                                 </div>
@@ -368,10 +368,10 @@
                                             <div class="tag-labels">
                                                 <div class="w25 px-0 d-flex align-items-center gap-2">
                                                     <div class="custom-checkbox">
-                                                        <input class="form-check-input" type="checkbox" value="" id="check15">
+                                                        <input class="form-check-input" type="checkbox" value="" id="skills2">
                                                         <div class="checkmark"></div>
                                                     </div>
-                                                    <label class="form-check-label" for="check15">
+                                                    <label class="form-check-label" for="skills2">
                                                         Business Development
                                                     </label>
                                                 </div>
@@ -380,10 +380,10 @@
                                             <div class="tag-labels">
                                                 <div class="w25 px-0 d-flex align-items-center gap-2">
                                                     <div class="custom-checkbox">
-                                                        <input class="form-check-input" type="checkbox" value="" id="check15">
+                                                        <input class="form-check-input" type="checkbox" value="" id="skills3">
                                                         <div class="checkmark"></div>
                                                     </div>
-                                                    <label class="form-check-label" for="check15">
+                                                    <label class="form-check-label" for="skills3">
                                                         Business Development
                                                     </label>
                                                 </div>
@@ -392,10 +392,10 @@
                                             <div class="tag-labels">
                                                 <div class="w25 px-0 d-flex align-items-center gap-2">
                                                     <div class="custom-checkbox">
-                                                        <input class="form-check-input" type="checkbox" value="" id="check15">
+                                                        <input class="form-check-input" type="checkbox" value="" id="skills4">
                                                         <div class="checkmark"></div>
                                                     </div>
-                                                    <label class="form-check-label" for="check15">
+                                                    <label class="form-check-label" for="skills4">
                                                         Business Development
                                                     </label>
                                                 </div>
@@ -404,10 +404,10 @@
                                             <div class="tag-labels">
                                                 <div class="w25 px-0 d-flex align-items-center gap-2">
                                                     <div class="custom-checkbox">
-                                                        <input class="form-check-input" type="checkbox" value="" id="check15">
+                                                        <input class="form-check-input" type="checkbox" value="" id="skills5">
                                                         <div class="checkmark"></div>
                                                     </div>
-                                                    <label class="form-check-label" for="check15">
+                                                    <label class="form-check-label" for="skills5">
                                                         Business Development
                                                     </label>
                                                 </div>
@@ -528,7 +528,7 @@
                                         <h5>Company Logo</h5>
                                     </th>
                                     <td class="col-7">
-                                        <img src="assets/images/compo_img.png" class="img-fluid" alt="">
+                                        <img src="{{asset('front/assets/images/compo_img.png')}}" class="img-fluid" alt="">
                                     </td>
                                 </tr>
                                 </tbody>
@@ -572,7 +572,7 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="title d-flex flex-column align-items-center text-center px-4">
-                        <img src="assets/images/welcome_logo.png" alt="">
+                        <img src="{{asset('front/assets/images/welcome_logo.png')}}" alt="">
                         <p>Pharetra convallis posuere morbi leo. Vestibulum lectus mauris ultrices eros in. Lobortis elementum </p>
                     </div>
                     <div class="modal-body pt-5">
@@ -589,7 +589,7 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="title d-flex flex-column align-items-center text-center px-4">
-                        <img src="assets/images/welcome_logo.png" alt="">
+                        <img src="{{asset('front/assets/images/welcome_logo.png')}}" alt="">
                         <p>Pharetra convallis posuere morbi leo. Vestibulum lectus mauris ultrices eros in. Lobortis elementum </p>
                     </div>
                     <div class="modal-body pt-5">
@@ -606,7 +606,7 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="title d-flex flex-column align-items-center text-center px-4">
-                        <img src="assets/images/link_img.png" alt="">
+                        <img src="{{asset('front/assets/images/link_img.png')}}" alt="">
                         <h2>Link to the
                             Company Job Post Page</h2>
                     </div>
@@ -615,12 +615,12 @@
             </div>
         </div>
         <!-- get end of url -->
-        <?php
+        {{-- <?php
         $urlArray = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
         $segments = explode('/', $urlArray);
         $numSegments = count($segments);
         $currentSegment = $segments[$numSegments - 1];
-        ?>
+        ?> --}}
             <!-- get end of url -->
         <script src="{{asset('front/assets/js/jquery-3.6.3.min.js')}}"></script>
         <script src="{{asset('front/assets/js/aos.js')}}"></script>
