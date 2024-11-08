@@ -23,7 +23,9 @@
                         <div>
                             <div class="d-flex align-items-center gap-2">
                                 <h4>Cities</h4>
+                                <a href="{{route('company.detail')}}">
                                 <img src="{{asset('front/assets/images/arrow_right.png')}}" alt="">
+                                </a>
                             </div>
                             <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu tortor,</p>
                         </div>

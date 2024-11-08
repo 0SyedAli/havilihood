@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire\Front\Auth;
+namespace App\Livewire\Front\Profile;
 
 use Livewire\Component;
 
@@ -8,6 +8,6 @@ class SideSection extends Component
 {
     public function render()
     {
-        return view('livewire.front.auth.side-section');
+        return view('livewire.front.profile.side-section');
     }
 }

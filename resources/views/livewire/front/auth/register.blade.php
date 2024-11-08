@@ -1,12 +1,12 @@
 
 
     <section class="auth_container">
-        <livewire:front.auth.side-section />
+        <livewire:front.auth.candidate.side-section />
         <div class="dash_right">
             <div class="dash_right_inner">
                 <h2>Signup</h2>
                 <p>Enter your details</p>
-                <form wire:submit.prevent="register">
+                <form action="{{route('candidate.otp')}}">
                     <div class="d-flex align-items-center justify-content-between pb-4">
                         <div class="w25 px-0 d-flex align-items-center gap-2">
                             <div class="custom-radio">
@@ -52,15 +52,34 @@
                         @enderror
                     </div>
                     <div class="mt-5">
-                        <button class="btn1"  >
+                        <button class="btn1" type="submit"   >
                             Signup now
                         </button>
                     </div>
                     <div class="dhac">
-                        <p>Don't have an account? <a href="{{route('login')}}" wire:navigate >SIGN UP</a></p>
+                        <p>Already have an account? <a href="{{route('login')}}" wire:navigate >LOGIN</a></p>
                     </div>
                 </form>
             </div>
         </div>
+
+        @script
+        <script>
+
+                $('input[name="flexRadioDefault"]').change((ele)=>{
+
+                    if(ele.target.value == "candidate"){
+                            $('form').attr('action','{{route('candidate.otp')}}')
+                    }
+                    else {
+
+                        $('form').attr('action','{{route('otp')}}')
+                    }
+
+                })
+
+
+        </script>
+        @endscript
     </section>
 
