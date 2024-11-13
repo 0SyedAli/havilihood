@@ -19,6 +19,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
         <link rel="stylesheet" type="text/css" href="{{asset('front/assets/css/slick-theme.css')}}" />
         <link href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
         <link href="{{asset('front/assets/css/custom.css')}}" rel="stylesheet" type="text/css">
 
     </head>
@@ -429,179 +431,11 @@
             <!-- Modal end -->
         </div>
 
-        <div class="modal fade" id="comfirm_detail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="title">
-                        <h2>Please Confirm Below Details</h2>
-                        <p>Pharetra convallis posuere morbi leo. Vestibulum lectus mauris ultrices eros in. Lobortis elementum </p>
-                    </div>
-                    <div class="modal-body proflie_details">
-                        <div class="table-responsive">
-                            <table class="w-100">
-                                <tbody>
-                                <tr>
-                                    <th class="col-5">
-                                        <h5>First Name:</h5>
-                                    </th>
-                                    <td class="col-7">
-                                        <h5><span>xxxx xxxxxxx</span></h5>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th class="col-5">
-                                        <h5>Last Name:</h5>
-                                    </th>
-                                    <td class="col-7">
-                                        <h5><span>xxxx xxxxxxx</span></h5>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th class="col-5">
-                                        <h5>Company:</h5>
-                                    </th>
-                                    <td class="col-7">
-                                        <h5><span>xxxx xxxxxxx</span></h5>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th class="col-5">
-                                        <h5>Job Title:</h5>
-                                    </th>
-                                    <td class="col-7">
-                                        <h5><span>xxxx xxxxxxx</span></h5>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th class="col-5">
-                                        <h5>Work Email:</h5>
-                                    </th>
-                                    <td class="col-7">
-                                        <h5><span>xxxx xxxxxxx</span></h5>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                    <td></td>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th class="col-5">
-                                        <h5>Company Website:</h5>
-                                    </th>
-                                    <td class="col-7">
-                                        <h5><span>xxxx xxxxxxx</span></h5>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th class="col-5">
-                                        <h5># of Employees:</h5>
-                                    </th>
-                                    <td class="col-7">
-                                        <h5><span>xxxx xxxxxxx</span></h5>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th class="col-5">
-                                        <h5>Employer Type:</h5>
-                                    </th>
-                                    <td class="col-7">
-                                        <h5><span>xxxx xxxxxxx</span></h5>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th class="col-5">
-                                        <h5>Headquarter City:</h5>
-                                    </th>
-                                    <td class="col-7">
-                                        <h5><span>xxxx xxxxxxx</span></h5>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th class="col-5">
-                                    </th>
-                                    <td class="col-7">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th class="col-5">
-                                        <h5>Company Logo</h5>
-                                    </th>
-                                    <td class="col-7">
-                                        <img src="{{asset('front/assets/images/compo_img.png')}}" class="img-fluid" alt="">
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <br>
-                        <br>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="px-0 d-flex align-items-start gap-3">
-                                    <div class="custom-checkbox">
-                                        <input class="form-check-input" type="checkbox" value="" id="check15">
-                                        <div class="checkmark"></div>
-                                    </div>
-                                    <label class="form-check-label w90" for="check12">
-                                        I confirm I represent HR, Recruiting, Marketing, PR or am an Executive at my company and I agree to Hivelihood <a href="javascript:;">Terms of Service</a> and <a href="javascript:;">Privacy Policy</a> on behalf of my company.
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <br>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="modal_btn_container justify-content-between gap-5">
-                                    <a href="information_employer" class="btn1" role="button">
-                                        Resubmit Information
-                                    </a>
-                                    <button class="btn1" role="button" data-bs-toggle="modal" data-bs-target="#welcome_hivelihood2">
-                                        Create Account
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="modal fade" id="welcome_hivelihood" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="title d-flex flex-column align-items-center text-center px-4">
-                        <img src="{{asset('front/assets/images/welcome_logo.png')}}" alt="">
-                        <p>Pharetra convallis posuere morbi leo. Vestibulum lectus mauris ultrices eros in. Lobortis elementum </p>
-                    </div>
-                    <div class="modal-body pt-5">
-                        <div class="modal_btn_container">
-                            <a href="dashboard-profile" class="btn1" role="button">
-                                My Dashboard
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="welcome_hivelihood2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="title d-flex flex-column align-items-center text-center px-4">
-                        <img src="{{asset('front/assets/images/welcome_logo.png')}}" alt="">
-                        <p>Pharetra convallis posuere morbi leo. Vestibulum lectus mauris ultrices eros in. Lobortis elementum </p>
-                    </div>
-                    <div class="modal-body pt-5">
-                        <div class="modal_btn_container">
-                            <a href="dashboard-job" class="btn1" role="button">
-                                My Dashboard
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+
+
+
         <div class="modal fade" id="forward_link" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -629,12 +463,21 @@
         <script src="{{asset('front/assets/js/owl.carousel.min.js')}}"></script>
         <script src="{{asset('front/assets/js/jquery-ui.js')}}"></script>
         <script type="text/javascript" src="{{asset('front/assets/js/slick.js')}}"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
         <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
         <script src="https://cdn.ckeditor.com/ckeditor5/40.1.0/classic/ckeditor.js"></script>
         <script src="{{asset('front/assets/js/custom.js')}}"></script>
 
 
 <script>
+
+    document.addEventListener('livewire:init', () => {
+        Livewire.on('error', toastr.error);
+        Livewire.on('success', toastr.success);
+    });
+
+
     document.addEventListener('DOMContentLoaded', () => {
         // Define the updateProgress function
         function updateProgress(value) {
@@ -700,6 +543,7 @@
     });
 </script>
 <script>
+
     function toggleMenu() {
         const menu = document.getElementById('menu');
         menu.classList.toggle('show');

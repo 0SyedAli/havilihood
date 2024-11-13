@@ -1,6 +1,6 @@
 <div>
     <section class="auth_container">
-        <livewire:front.auth.side-section />
+        <livewire:front.auth.candidate.side-section />
         <div class="dash_right">
             <div class="dash_right_inner">
                 <h2>Forget Password</h2>

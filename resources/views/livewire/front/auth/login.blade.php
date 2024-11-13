@@ -1,6 +1,6 @@
 
     <section class="auth_container">
-        <livewire:front.auth.side-section />
+        <livewire:front.auth.candidate.side-section />
         <div class="dash_right">
             <div class="dash_right_inner">
                 <img src="{{asset('front/assets/images/logo_black.png')}}" class="mb-5 d-inline-block d-lg-none" width="200" alt="">

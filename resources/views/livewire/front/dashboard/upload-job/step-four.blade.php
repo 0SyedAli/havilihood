@@ -35,35 +35,35 @@
                                 <div class="custom_radio">
                                     <input type="radio" id="full_time" name="cr_job_type5">
                                     <label for="full_time">
-                                        <img src="assets/images/plus.png" alt="">
+                                        <img src="{{asset('front/assets/images/plus.png')}}" alt="">
                                         Health insurance
                                     </label>
                                 </div>
                                 <div class="custom_radio">
                                     <input type="radio" id="part_time" name="cr_job_type5">
                                     <label for="part_time">
-                                        <img src="assets/images/plus.png" alt="">
+                                        <img src="{{asset('front/assets/images/plus.png')}}" alt="">
                                         Paid time off
                                     </label>
                                 </div>
                                 <div class="custom_radio">
                                     <input type="radio" id="contract" name="cr_job_type5">
                                     <label for="contract">
-                                        <img src="assets/images/plus.png" alt="">
+                                        <img src="{{asset('front/assets/images/plus.png')}}" alt="">
                                         Dental insurance
                                     </label>
                                 </div>
                                 <div class="custom_radio">
                                     <input type="radio" id="freelance" name="cr_job_type5">
                                     <label for="freelance">
-                                        <img src="assets/images/plus.png" alt="">
+                                        <img src="{{asset('front/assets/images/plus.png')}}" alt="">
                                         Vision insurance
                                     </label>
                                 </div>
                                 <div class="custom_radio">
                                     <input type="radio" id="add_benif" name="cr_job_type5">
                                     <label for="add_benif">
-                                        <img src="assets/images/plus.png" alt="">
+                                        <img src="{{asset('front/assets/images/plus.png')}}" alt="">
                                         Add you own benefits
                                     </label>
                                 </div>

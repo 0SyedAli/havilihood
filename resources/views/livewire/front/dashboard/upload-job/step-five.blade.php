@@ -14,3 +14,11 @@
         <p>You can easily upload a PDF document to upload your job details.</p>
     </div>
 </div>
+
+@script
+<script>
+    ClassicEditor.create(document.querySelector("#editor")).catch((error) => {
+      console.error(error);
+    });
+</script>
+@endscript

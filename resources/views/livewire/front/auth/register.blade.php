@@ -1,7 +1,7 @@
 
 
     <section class="auth_container">
-        <livewire:front.auth.side-section />
+        <livewire:front.auth.candidate.side-section />
         <div class="dash_right">
             <div class="dash_right_inner">
                 <h2>Signup</h2>
@@ -52,15 +52,17 @@
                         @enderror
                     </div>
                     <div class="mt-5">
-                        <button class="btn1"  >
+                        <button class="btn1" type="submit"   >
                             Signup now
                         </button>
                     </div>
                     <div class="dhac">
-                        <p>Don't have an account? <a href="{{route('login')}}" wire:navigate >SIGN UP</a></p>
+                        <p>Already have an account? <a href="{{route('login')}}" wire:navigate >LOGIN</a></p>
                     </div>
                 </form>
             </div>
         </div>
+
+
     </section>
 
