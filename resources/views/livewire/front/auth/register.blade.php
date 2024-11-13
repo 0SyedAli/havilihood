@@ -6,7 +6,7 @@
             <div class="dash_right_inner">
                 <h2>Signup</h2>
                 <p>Enter your details</p>
-                <form action="{{route('candidate.otp')}}">
+                <form wire:submit.prevent="register">
                     <div class="d-flex align-items-center justify-content-between pb-4">
                         <div class="w25 px-0 d-flex align-items-center gap-2">
                             <div class="custom-radio">
@@ -63,23 +63,6 @@
             </div>
         </div>
 
-        @script
-        <script>
 
-                $('input[name="flexRadioDefault"]').change((ele)=>{
-
-                    if(ele.target.value == "candidate"){
-                            $('form').attr('action','{{route('candidate.otp')}}')
-                    }
-                    else {
-
-                        $('form').attr('action','{{route('otp')}}')
-                    }
-
-                })
-
-
-        </script>
-        @endscript
     </section>
 

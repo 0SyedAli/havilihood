@@ -13,19 +13,19 @@
             </li>
             <li class="@yield('job-suggestions')">
                 <a href="{{route('job.suggestions')}}">
-                    <img src="{{asset('front/assets/images/prof_side.png')}}" alt="">
+                    <img src="{{asset('front/assets/images/job.png')}}" alt="">
                     <span>Job Suggestions</span>
                 </a>
             </li>
             <li class="@yield('saved-jobs')">
                 <a href="{{route('saved.jobs')}}">
-                    <img src="{{asset('front/assets/images/prof_side.png')}}" alt="">
+                    <img src="{{asset('front/assets/images/save_icon.png')}}" alt="">
                     <span>Saved Jobs</span>
                 </a>
             </li>
             <li class="@yield('settings')">
                 <a href="#">
-                    <img src="{{asset('front/assets/images/prof_side.png')}}" alt="">
+                    <img src="{{asset('front/assets/images/setting_icon.png')}}" alt="">
                     <span>Settings</span>
                 </a>
             </li>

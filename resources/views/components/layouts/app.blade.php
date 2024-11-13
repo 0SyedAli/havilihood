@@ -19,6 +19,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
         <link rel="stylesheet" type="text/css" href="{{asset('front/assets/css/slick-theme.css')}}" />
         <link href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
         <link href="{{asset('front/assets/css/custom.css')}}" rel="stylesheet" type="text/css">
 
     </head>
@@ -461,12 +463,21 @@
         <script src="{{asset('front/assets/js/owl.carousel.min.js')}}"></script>
         <script src="{{asset('front/assets/js/jquery-ui.js')}}"></script>
         <script type="text/javascript" src="{{asset('front/assets/js/slick.js')}}"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
         <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
         <script src="https://cdn.ckeditor.com/ckeditor5/40.1.0/classic/ckeditor.js"></script>
         <script src="{{asset('front/assets/js/custom.js')}}"></script>
 
 
 <script>
+
+    document.addEventListener('livewire:init', () => {
+        Livewire.on('error', toastr.error);
+        Livewire.on('success', toastr.success);
+    });
+
+
     document.addEventListener('DOMContentLoaded', () => {
         // Define the updateProgress function
         function updateProgress(value) {
@@ -532,6 +543,7 @@
     });
 </script>
 <script>
+
     function toggleMenu() {
         const menu = document.getElementById('menu');
         menu.classList.toggle('show');

@@ -6,45 +6,45 @@
             <form action="{{route('profile.anaylist')}}" method="get">
                 <div class="info_input">
                     <label for="">Job title <span>*</span></label>
-                    <input type="text" placeholder="Job title or keyword">
+                    <input type="text" placeholder="Job title or keyword" wire:model="job_title">
                 </div>
                 <div class="info_check_container">
-                    <label for="">Job title <span>*</span></label>
+                    <label for="">Job type <span>*</span></label>
                     <div class="info_check_inner">
 
                         <div class="w25 px-0 d-flex align-items-center gap-2">
                             <div class="custom-checkbox">
-                                <input class="form-check-input" type="checkbox" value="" id="check15">
+                                <input class="form-check-input" type="checkbox" value="" id="check1" wire:model="job_type">
                                 <div class="checkmark"></div>
                             </div>
-                            <label class="form-check-label" for="check12">
+                            <label class="form-check-label" for="check1">
                                 Full Time
                             </label>
                         </div>
                         <div class="w25 px-0 d-flex align-items-center gap-2">
                             <div class="custom-checkbox">
-                                <input class="form-check-input" type="checkbox" value="" id="check15">
+                                <input class="form-check-input" type="checkbox" value="" id="check2" wire:model="job_type">
                                 <div class="checkmark"></div>
                             </div>
-                            <label class="form-check-label" for="check12">
+                            <label class="form-check-label" for="check2">
                                 Contract
                             </label>
                         </div>
                         <div class="w25 px-0 d-flex align-items-center gap-2">
                             <div class="custom-checkbox">
-                                <input class="form-check-input" type="checkbox" value="" id="check15">
+                                <input class="form-check-input" type="checkbox" value="" id="check3" wire:model="job_type">
                                 <div class="checkmark"></div>
                             </div>
-                            <label class="form-check-label" for="check12">
+                            <label class="form-check-label" for="check3">
                                 Part Time
                             </label>
                         </div>
                         <div class="w25 px-0 d-flex align-items-center gap-2">
                             <div class="custom-checkbox">
-                                <input class="form-check-input" type="checkbox" value="" id="check15">
+                                <input class="form-check-input" type="checkbox" value="" id="check4" wire:model="job_type">
                                 <div class="checkmark"></div>
                             </div>
-                            <label class="form-check-label" for="check12">
+                            <label class="form-check-label" for="check4">
                                 Internship
                             </label>
                         </div>
@@ -53,7 +53,7 @@
                 <div class="info_in_ch d-flex align-items-end justify-content-between">
                     <div class="info_input m-0">
                         <label for="">Location <span>*</span></label>
-                        <select class="form-select" aria-label="Select location">
+                        <select class="form-select" aria-label="Select location" wire:model="location">
                             <option selected>Select location</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
