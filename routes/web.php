@@ -55,6 +55,3 @@ Route::group( ['middleware' => 'auth:web'], function () {
     });
 });
 
-Route::group( ['prefix'=>'candidate','as' => 'candidate.'], function () {
-    Route::get('/login', Home::class);
-});
