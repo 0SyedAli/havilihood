@@ -39,6 +39,7 @@ class ComposerStaticInited4ece0505bed538e4bebb83da252172
         'ce9671a430e4846b44e1c68c7611f9f5' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery.php',
         'a1cfe24d14977df6878b9bf804af2d1c' => __DIR__ . '/..' . '/nunomaduro/collision/src/Adapters/Phpunit/Autoload.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
+        '33c5517e3eb159ab5a0bfd876d5b8e64' => __DIR__ . '/../..' . '/app/Helpers/GlobalHelper.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -527,7 +528,6 @@ class ComposerStaticInited4ece0505bed538e4bebb83da252172
     public static $classMap = array (
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Middleware\\RoleMiddleware' => __DIR__ . '/../..' . '/app/Http/Middleware/RoleMiddleware.php',
-        'App\\Livewire\\Front\\Auth\\Candidate\\Otp' => __DIR__ . '/../..' . '/app/Livewire/Front/Auth/Candidate/Otp.php',
         'App\\Livewire\\Front\\Auth\\Candidate\\PersonalityAnalysis' => __DIR__ . '/../..' . '/app/Livewire/Front/Auth/Candidate/PersonalityAnalysis.php',
         'App\\Livewire\\Front\\Auth\\Candidate\\ProfileAnaylist' => __DIR__ . '/../..' . '/app/Livewire/Front/Auth/Candidate/ProfileAnaylist.php',
         'App\\Livewire\\Front\\Auth\\Candidate\\SideSection' => __DIR__ . '/../..' . '/app/Livewire/Front/Auth/Candidate/SideSection.php',
@@ -538,7 +538,6 @@ class ComposerStaticInited4ece0505bed538e4bebb83da252172
         'App\\Livewire\\Front\\Auth\\Otp' => __DIR__ . '/../..' . '/app/Livewire/Front/Auth/Otp.php',
         'App\\Livewire\\Front\\Auth\\Recruiter\\CompanyInfo' => __DIR__ . '/../..' . '/app/Livewire/Front/Auth/Recruiter/CompanyInfo.php',
         'App\\Livewire\\Front\\Auth\\Recruiter\\EmployerInfo' => __DIR__ . '/../..' . '/app/Livewire/Front/Auth/Recruiter/EmployerInfo.php',
-        'App\\Livewire\\Front\\Auth\\Recruiter\\Otp' => __DIR__ . '/../..' . '/app/Livewire/Front/Auth/Recruiter/Otp.php',
         'App\\Livewire\\Front\\Auth\\Recruiter\\SideSection' => __DIR__ . '/../..' . '/app/Livewire/Front/Auth/Recruiter/SideSection.php',
         'App\\Livewire\\Front\\Auth\\Register' => __DIR__ . '/../..' . '/app/Livewire/Front/Auth/Register.php',
         'App\\Livewire\\Front\\Components\\JobCard' => __DIR__ . '/../..' . '/app/Livewire/Front/Components/JobCard.php',
@@ -565,6 +564,7 @@ class ComposerStaticInited4ece0505bed538e4bebb83da252172
         'App\\Models\\Candidate' => __DIR__ . '/../..' . '/app/Models/Candidate.php',
         'App\\Models\\Company' => __DIR__ . '/../..' . '/app/Models/Company.php',
         'App\\Models\\Otp' => __DIR__ . '/../..' . '/app/Models/Otp.php',
+        'App\\Models\\PersonalityAnalysis' => __DIR__ . '/../..' . '/app/Models/PersonalityAnalysis.php',
         'App\\Models\\Recruiter' => __DIR__ . '/../..' . '/app/Models/Recruiter.php',
         'App\\Models\\Role' => __DIR__ . '/../..' . '/app/Models/Role.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',

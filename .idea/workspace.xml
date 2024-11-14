@@ -5,14 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9da93a87-7d1d-434d-b85f-3d17b313c4e8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Helpers/GlobalHelper.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Auth/Candidate/Otp.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Auth/Recruiter/Otp.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/auth/candidate/otp.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Auth/Candidate/UserInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Auth/Candidate/UserInfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Auth/Otp.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Auth/Otp.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Profile/SideSection.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Profile/SideSection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Candidate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Candidate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2024_11_12_190420_create_candidates_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2024_11_12_190420_create_candidates_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/auth/candidate/personality-analysis.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/auth/candidate/personality-analysis.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/auth/candidate/user-info.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/auth/candidate/user-info.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/auth/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/auth/otp.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/auth/otp.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/auth/recruiter/otp.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/profile/side-section.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/profile/side-section.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/views/dc70b943affaad4c216257929958a76b.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/dc70b943affaad4c216257929958a76b.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/f1a7518a72de0b92cc70f8ad9375178d.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/f1a7518a72de0b92cc70f8ad9375178d.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,28 +169,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/wamp64/www/staypass&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "WebServerToolWindowPanel.toolwindow.highlight.mappings": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.symlinks": "true",
+    "WebServerToolWindowPanel.toolwindow.show.date": "false",
+    "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
+    "WebServerToolWindowPanel.toolwindow.show.size": "false",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/wamp64/www/laptop-backend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\havelihood\public\front\assets\images" />
@@ -227,7 +240,7 @@
       <workItem from="1731442413616" duration="9366000" />
       <workItem from="1731452612747" duration="1799000" />
       <workItem from="1731454689455" duration="3256000" />
-      <workItem from="1731514981258" duration="1153000" />
+      <workItem from="1731514981258" duration="16963000" />
     </task>
     <servers />
   </component>
@@ -265,6 +278,11 @@
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/livewire/front/auth/otp.blade.php</url>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/livewire/front/auth/candidate/user-info.blade.php</url>
+          <line>19</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

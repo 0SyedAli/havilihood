@@ -8,7 +8,6 @@ $baseDir = dirname($vendorDir);
 return array(
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'App\\Http\\Middleware\\RoleMiddleware' => $baseDir . '/app/Http/Middleware/RoleMiddleware.php',
-    'App\\Livewire\\Front\\Auth\\Candidate\\Otp' => $baseDir . '/app/Livewire/Front/Auth/Candidate/Otp.php',
     'App\\Livewire\\Front\\Auth\\Candidate\\PersonalityAnalysis' => $baseDir . '/app/Livewire/Front/Auth/Candidate/PersonalityAnalysis.php',
     'App\\Livewire\\Front\\Auth\\Candidate\\ProfileAnaylist' => $baseDir . '/app/Livewire/Front/Auth/Candidate/ProfileAnaylist.php',
     'App\\Livewire\\Front\\Auth\\Candidate\\SideSection' => $baseDir . '/app/Livewire/Front/Auth/Candidate/SideSection.php',
@@ -19,7 +18,6 @@ return array(
     'App\\Livewire\\Front\\Auth\\Otp' => $baseDir . '/app/Livewire/Front/Auth/Otp.php',
     'App\\Livewire\\Front\\Auth\\Recruiter\\CompanyInfo' => $baseDir . '/app/Livewire/Front/Auth/Recruiter/CompanyInfo.php',
     'App\\Livewire\\Front\\Auth\\Recruiter\\EmployerInfo' => $baseDir . '/app/Livewire/Front/Auth/Recruiter/EmployerInfo.php',
-    'App\\Livewire\\Front\\Auth\\Recruiter\\Otp' => $baseDir . '/app/Livewire/Front/Auth/Recruiter/Otp.php',
     'App\\Livewire\\Front\\Auth\\Recruiter\\SideSection' => $baseDir . '/app/Livewire/Front/Auth/Recruiter/SideSection.php',
     'App\\Livewire\\Front\\Auth\\Register' => $baseDir . '/app/Livewire/Front/Auth/Register.php',
     'App\\Livewire\\Front\\Components\\JobCard' => $baseDir . '/app/Livewire/Front/Components/JobCard.php',
@@ -46,6 +44,7 @@ return array(
     'App\\Models\\Candidate' => $baseDir . '/app/Models/Candidate.php',
     'App\\Models\\Company' => $baseDir . '/app/Models/Company.php',
     'App\\Models\\Otp' => $baseDir . '/app/Models/Otp.php',
+    'App\\Models\\PersonalityAnalysis' => $baseDir . '/app/Models/PersonalityAnalysis.php',
     'App\\Models\\Recruiter' => $baseDir . '/app/Models/Recruiter.php',
     'App\\Models\\Role' => $baseDir . '/app/Models/Role.php',
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',

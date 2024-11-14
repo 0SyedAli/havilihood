@@ -1,5 +1,5 @@
 <section class="auth_container">
-    <!--[if BLOCK]><![endif]--><?php if(auth()->user()->role == 'candidate'): ?>
+    <!--[if BLOCK]><![endif]--><?php if(isCandidate()): ?>
         <?php
 $__split = function ($name, $params = []) {
     return [$name, $params];
@@ -65,7 +65,7 @@ endif;
 unset($__errorArgs, $__bag); ?><!--[if ENDBLOCK]><![endif]-->
                 <div class="mt-5">
                     <button wire:loading.remove wire:target="verify" class="btn1">
-                        Signup now
+                        Verify Code
                     </button>
                     <button wire:loading wire:target="verify" class="btn1">
                         <div  class="spinner-border" role="status">

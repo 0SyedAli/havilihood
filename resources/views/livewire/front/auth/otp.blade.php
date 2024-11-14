@@ -1,5 +1,5 @@
 <section class="auth_container">
-    @if(auth()->user()->role == 'candidate')
+    @if(isCandidate())
         <livewire:front.auth.candidate.side-section />
     @else
         <livewire:front.auth.recruiter.side-section />
@@ -27,10 +27,10 @@
                 <small class="text-danger">{{$message}}</small>
                 @enderror
                 <div class="mt-5">
-                    <button wire:loading.remove wire:target="verify" class="btn1">
-                        Signup now
+                    <button  class="btn1" wire:loading.remove wire:target="verify">
+                        Verify Code
                     </button>
-                    <button wire:loading wire:target="verify" class="btn1">
+                    <button class="btn1" type="button" wire:loading  wire:target="verify"  >
                         <div  class="spinner-border" role="status">
                             <span class="visually-hidden">Loading...</span>
                         </div>

@@ -470,9 +470,9 @@
         <script src="{{asset('front/assets/js/custom.js')}}"></script>
 
 
-<script>
+<script data-navigate-once >
 
-    document.addEventListener('livewire:init', () => {
+    document.addEventListener('livewire:rendered', () => {
         Livewire.on('error', toastr.error);
         Livewire.on('success', toastr.success);
     });

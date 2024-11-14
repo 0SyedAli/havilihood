@@ -4,9 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Candidate extends Model
+class PersonalityAnalysis extends Model
 {
-    protected $guarded;
-
-
+    //
 }

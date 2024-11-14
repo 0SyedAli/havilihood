@@ -52,8 +52,14 @@
                         @enderror
                     </div>
                     <div class="mt-5">
-                        <button class="btn1" type="submit"   >
+
+                        <button  class="btn1" wire:loading.remove wire:target="register">
                             Signup now
+                        </button>
+                        <button  class="btn1" type="button" wire:loading  wire:target="register">
+                            <div  class="spinner-border" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
                         </button>
                     </div>
                     <div class="dhac">
