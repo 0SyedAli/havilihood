@@ -1,5 +1,5 @@
 <section class="auth_container">
-    @if(auth()->user()->role == 'candidate')
+    @if(isCandidate())
         <livewire:front.auth.candidate.side-section />
     @else
         <livewire:front.auth.recruiter.side-section />
@@ -8,7 +8,6 @@
         <div class="dash_right_inner">
             <h2>OTP</h2>
             <p>We have sent you an email containing 6 digits verification code. Please enter the code to verify your identity</p>
-{{--            <form action="{{route('employer.info')}}" method="get" class="form_container">--}}
             <div>
                 <a href="javascript:;" wire:loading.remove wire:target="resendCode"  wire:click="resendCode">resend code</a>
                 <div wire:loading wire:target="resendCode" class="spinner-border" role="status">
@@ -28,10 +27,10 @@
                 <small class="text-danger">{{$message}}</small>
                 @enderror
                 <div class="mt-5">
-                    <button wire:loading.remove wire:target="verify" class="btn1">
-                        Signup now
+                    <button  class="btn1" wire:loading.remove wire:target="verify">
+                        Verify Code
                     </button>
-                    <button wire:loading wire:target="verify" class="btn1">
+                    <button class="btn1" type="button" wire:loading  wire:target="verify"  >
                         <div  class="spinner-border" role="status">
                             <span class="visually-hidden">Loading...</span>
                         </div>

@@ -29,13 +29,18 @@
                     <span>Settings</span>
                 </a>
             </li>
-
+            <li class="@yield('dash-setting') menu_mobile">
+                <a href="javascript:voide(0);" wire:click="logout">
+                    <img src="{{asset('front/assets/images/prof_side.png')}}" alt="">
+                    <span>Logout</span>
+                </a>
+            </li>
         </ul>
     </div>
     <div class="ds_inner2">
         <ul>
             <li>
-                <a href="">
+                <a href="javascript:;" wire:click="logout">
                     <img src="{{asset('front/assets/images/prof_side.png')}}" alt="">
                     <span>
                         Log out

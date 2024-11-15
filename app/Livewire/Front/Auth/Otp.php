@@ -7,6 +7,7 @@ use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use Livewire\Attributes\On;
+use Livewire\Attributes\Title;
 use Livewire\Component;
 use Masmerise\Toaster\Toaster;
 
@@ -34,14 +35,19 @@ class Otp extends Component
 
         Mail::to($user->email)->send(new OtpEmail($data));
 
-        $this->dispatch('success','otp has been sent to your email');
+        $this->dispatch('success','OTP has been sent to your email');
     }
 
     public function verify()
     {
         $this->validate([
-            'otp_code' => 'required|numeric|digits:6'
+            'otp_code' => 'required|numeric|digits:6',
+        ], [
+            'otp_code.required' => 'The OTP code is required.',
+            'otp_code.numeric' => 'The OTP code must be a number.',
+            'otp_code.digits' => 'The OTP code must be 6 digits.',
         ]);
+
         $user = Auth::user();
         $otp = \App\Models\Otp::where('email',$user->email)->where('is_verified',false)->orderByDesc('id')->first();
         $expiry = now();
@@ -55,10 +61,10 @@ class Otp extends Component
                     $user->save();
                     $otp->save();
                      $this->dispatch('success','user verified successfully');
-                     if ($user->role == 'candidate'){
-                         $this->redirectRoute('user.info');
+                     if (isCandidate()){
+                         $this->redirectRoute('user.info',navigate: true);
                      }else{
-                         $this->redirectRoute('employer.info');
+                         $this->redirectRoute('employer.info', navigate: true);
                      }
                 }
                 else{
@@ -76,6 +82,7 @@ class Otp extends Component
     }
 
 
+    #[Title('OTP')]
     public function render()
     {
         return view('livewire.front.auth.otp');

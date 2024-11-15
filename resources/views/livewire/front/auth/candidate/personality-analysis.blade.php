@@ -2,7 +2,7 @@
     <livewire:front.auth.candidate.side-section />
     <div class="dash_right">
         <div class="dash_right_inner info">
-            <h2>What role are you looking for</h2>
+            <h2>Personality Analysis Section</h2>
             <p>Enter your details</p>
             <form action="javascript:;">
                 <div>

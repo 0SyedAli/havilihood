@@ -470,11 +470,14 @@
         <script src="{{asset('front/assets/js/custom.js')}}"></script>
 
 
-<script>
+<script data-navigate-once >
 
     document.addEventListener('livewire:init', () => {
         Livewire.on('error', toastr.error);
         Livewire.on('success', toastr.success);
+        Livewire.on('debug', (data)=>{
+            console.log(data)
+        });
     });
 
 

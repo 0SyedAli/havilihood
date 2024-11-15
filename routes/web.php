@@ -38,7 +38,6 @@ Route::group( ['middleware' => 'auth:web'], function () {
     Route::get('/otp', Otp::class)->name('otp');
 
     Route::group(['prefix' => 'dashboard', 'middleware' => 'role:candidate'], function () {
-
         Route::get('/candidates', Candidates::class)->name('candidates');
         Route::get('/jobs', Jobs::class)->name('jobs');
         Route::get('/upload-job', StepContainer::class)->name('upload.job');
@@ -47,6 +46,7 @@ Route::group( ['middleware' => 'auth:web'], function () {
         Route::get('/company-detail', CompanyDetail::class)->name('company.detail');
 
     });
+
     Route::group(['prefix' => 'profile'], function () {
         Route::get('/', Profile::class)->name('profile');
         Route::get('/job-suggestions', JobSuggestions::class)->name('job.suggestions');
@@ -55,6 +55,3 @@ Route::group( ['middleware' => 'auth:web'], function () {
     });
 });
 
-Route::group( ['prefix'=>'candidate','as' => 'candidate.'], function () {
-    Route::get('/login', Home::class);
-});

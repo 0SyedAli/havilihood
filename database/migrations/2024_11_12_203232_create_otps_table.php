@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('otp_code');
             $table->boolean('is_verified')->default(false);
             $table->timestamps();
+
         });
     }
 

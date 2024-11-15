@@ -13,8 +13,16 @@ return new class extends Migration
     {
         Schema::create('candidates', function (Blueprint $table) {
             $table->id();
+            $table->string('job_title');
+            $table->string('job_types');
+            $table->string('location');
+            $table->string('work_authorizations');
+            $table->boolean('open_remote')->default(false);
+            $table->string('resume')->nullable();
             $table->foreignId('user_id')->constrained('users');
             $table->timestamps();
+            $table->softDeletes();
+
         });
     }
 
