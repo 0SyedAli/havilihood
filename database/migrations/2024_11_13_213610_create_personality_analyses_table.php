@@ -16,6 +16,8 @@ return new class extends Migration
             $table->text('question');
             $table->text('options');
             $table->timestamps();
+            $table->softDeletes();
+
         });
     }
 

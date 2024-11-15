@@ -5,27 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9da93a87-7d1d-434d-b85f-3d17b313c4e8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Helpers/GlobalHelper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Auth/Candidate/PersonalityAnalysis.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Auth/Candidate/PersonalityAnalysis.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Auth/Candidate/UserInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Auth/Candidate/UserInfo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Auth/Otp.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Auth/Otp.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Profile/SideSection.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Profile/SideSection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Auth/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Auth/Login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepContainer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepContainer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepFive.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepFive.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepFour.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepFour.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepOne.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepOne.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepThree.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepThree.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepTwo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepTwo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Candidate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Candidate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Company.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Company.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Otp.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Otp.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/PersonalityAnalysis.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/PersonalityAnalysis.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Recruiter.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Recruiter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Role.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/0001_01_01_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/0001_01_01_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2024_11_12_184138_create_roles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2024_11_12_184138_create_roles_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2024_11_12_184242_create_companies_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2024_11_12_184242_create_companies_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2024_11_12_184318_create_recruiters_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2024_11_12_184318_create_recruiters_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2024_11_12_190420_create_candidates_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2024_11_12_190420_create_candidates_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2024_11_12_203232_create_otps_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2024_11_12_203232_create_otps_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2024_11_13_213610_create_personality_analyses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2024_11_13_213610_create_personality_analyses_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/assets/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/assets/css/custom.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/components/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/auth/candidate/personality-analysis.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/auth/candidate/personality-analysis.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/auth/candidate/user-info.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/auth/candidate/user-info.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/auth/otp.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/auth/otp.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/profile/side-section.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/profile/side-section.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/upload-job/step-container.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/upload-job/step-container.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/upload-job/step-five.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/upload-job/step-five.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/upload-job/step-four.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/upload-job/step-four.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/upload-job/step-one.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/upload-job/step-one.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/upload-job/step-three.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/upload-job/step-three.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/upload-job/step-two.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/upload-job/step-two.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/views/dc70b943affaad4c216257929958a76b.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/dc70b943affaad4c216257929958a76b.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/views/f1a7518a72de0b92cc70f8ad9375178d.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/f1a7518a72de0b92cc70f8ad9375178d.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +197,7 @@
     "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
     "WebServerToolWindowPanel.toolwindow.show.size": "false",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/wamp64/www/laptop-backend",
+    "last_opened_file_path": "C:/wamp64/www/staypass",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -241,6 +257,7 @@
       <workItem from="1731452612747" duration="1799000" />
       <workItem from="1731454689455" duration="3256000" />
       <workItem from="1731514981258" duration="16963000" />
+      <workItem from="1731601087931" duration="28097000" />
     </task>
     <servers />
   </component>
@@ -271,11 +288,6 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/livewire/front/dashboard/upload-job/step-three.blade.php</url>
-          <line>34</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/livewire/front/auth/otp.blade.php</url>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
@@ -283,6 +295,11 @@
           <url>file://$PROJECT_DIR$/resources/views/livewire/front/auth/candidate/user-info.blade.php</url>
           <line>19</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/livewire/front/dashboard/upload-job/step-three.blade.php</url>
+          <line>10</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

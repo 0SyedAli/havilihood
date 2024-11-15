@@ -64,10 +64,10 @@ if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?><!--[if ENDBLOCK]><![endif]-->
                 <div class="mt-5">
-                    <button wire:loading.remove wire:target="verify" class="btn1">
+                    <button  class="btn1" wire:loading.remove wire:target="verify">
                         Verify Code
                     </button>
-                    <button wire:loading wire:target="verify" class="btn1">
+                    <button class="btn1" type="button" wire:loading  wire:target="verify"  >
                         <div  class="spinner-border" role="status">
                             <span class="visually-hidden">Loading...</span>
                         </div>

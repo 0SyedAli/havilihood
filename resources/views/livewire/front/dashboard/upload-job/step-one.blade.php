@@ -17,10 +17,11 @@
         <div class="step_input ">
             <p>Which option best describes this job's position?</p>
             <div class="step_select" >
-                <select wire:model.change="job_position">
-                    <option value="Lead">Lead</option>
-                    <option value="HR">HR</option>
-                    <option value="CEO">CEO</option>
+                <select wire:model.live="job_position">
+                    <option  disabled value="">Select job position</option>
+                    <option >Lead</option>
+                    <option >HR</option>
+                    <option >CEO</option>
                 </select>
                 @error('job_position')
                 <small class="text-danger">{{$message}}</small>
@@ -30,17 +31,29 @@
         <div class="step_input ">
             <p>Choose country</p>
             <div class="step_select" >
-                <select>
-                    <option value="as">as</option>
+                <select wire:model.live="country">
+                    <option disabled value="">Select country</option>
+                    <option >USA</option>
+                    <option >UAE</option>
+                    <option >SAU</option>
                 </select>
+                @error('country')
+                <small class="text-danger">{{$message}}</small>
+                @enderror
             </div>
         </div>
         <div class="step_input ">
             <p>Choose state</p>
             <div class="step_select">
-                <select>
-                    <option value="as">as</option>
+                <select wire:model.live="state">
+                    <option disabled value="">Select state</option>
+                    <option >Wahington</option>
+                    <option >new york</option>
+                    <option >time square</option>
                 </select>
+                @error('state')
+                <small class="text-danger">{{$message}}</small>
+                @enderror
             </div>
         </div>
     </div>

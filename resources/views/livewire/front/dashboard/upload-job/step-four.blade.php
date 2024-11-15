@@ -12,20 +12,34 @@
                             <div class="col-sm-6 d-flex align-items-center gap-3">
                                 <p>Rate</p>
                                 <div class="step_select">
-                                    <select>
+                                    <select  wire:model.live="pay_period">
+                                        <option value="" >Select Rate</option>
                                         <option value="per hour">per hour</option>
+                                        <option value="per week">per week</option>
+                                        <option value="per month">per month</option>
+                                        <option value="per year">per year</option>
                                     </select>
                                 </div>
                             </div>
+                            @error('pay_period')
+                                <small class="text-danger">{{$message}}</small>
+                            @enderror
                         </div>
                         <div class="step_input row">
                             <div class="col-6 d-flex align-items-center gap-4">
-                                <p>From</p>
-                                <input type="text">
+                                <p>Minimum</p>
+                                <input type="number" class="cust_input" wire:model.live="salary_start">
+
+                                @error('salary_start')
+                                <small class="text-danger">{{$message}}</small>
+                                @enderror
                             </div>
                             <div class="col-6 d-flex align-items-center gap-4">
-                                <p>To</p>
-                                <input type="text">
+                                <p>Maximum</p>
+                                <input type="number" class="cust_input" wire:model.live="salary_end">
+                                @error('salary_end')
+                                <small class="text-danger">{{$message}}</small>
+                                @enderror
                             </div>
                         </div>
                         <div class="select_job_type">
@@ -33,43 +47,49 @@
                             <p>This helps your job post stand out to the right candidates. It's the first thing they'll see, so make it count! </p>
                             <div class="custom_container">
                                 <div class="custom_radio">
-                                    <input type="radio" id="full_time" name="cr_job_type5">
+                                    <input type="checkbox" id="full_time" name="cr_job_type5" value="Health insurance" wire:model.live="benefits">
                                     <label for="full_time">
-                                        <img src="{{asset('front/assets/images/plus.png')}}" alt="">
+                                        <img src="{{asset('front/assets/images/plus.png')}}" alt="" >
                                         Health insurance
                                     </label>
                                 </div>
                                 <div class="custom_radio">
-                                    <input type="radio" id="part_time" name="cr_job_type5">
+                                    <input type="checkbox" id="part_time" name="cr_job_type5" value="Paid time off" wire:model.live="benefits">
                                     <label for="part_time">
-                                        <img src="{{asset('front/assets/images/plus.png')}}" alt="">
+                                        <img src="{{asset('front/assets/images/plus.png')}}" alt="" >
                                         Paid time off
                                     </label>
                                 </div>
                                 <div class="custom_radio">
-                                    <input type="radio" id="contract" name="cr_job_type5">
+                                    <input type="checkbox" id="contract" name="cr_job_type5" value="Dental insurance" wire:model.live="benefits">
                                     <label for="contract">
-                                        <img src="{{asset('front/assets/images/plus.png')}}" alt="">
+                                        <img src="{{asset('front/assets/images/plus.png')}}" alt="" >
                                         Dental insurance
                                     </label>
                                 </div>
                                 <div class="custom_radio">
-                                    <input type="radio" id="freelance" name="cr_job_type5">
+                                    <input type="checkbox" id="freelance" name="cr_job_type5" value="Vision insurance" wire:model.live="benefits">
                                     <label for="freelance">
-                                        <img src="{{asset('front/assets/images/plus.png')}}" alt="">
+                                        <img src="{{asset('front/assets/images/plus.png')}}" alt="" >
                                         Vision insurance
                                     </label>
                                 </div>
                                 <div class="custom_radio">
-                                    <input type="radio" id="add_benif" name="cr_job_type5">
+                                    <input type="checkbox" id="add_benif" name="cr_job_type5" value="Add you own benefits" wire:model.live="benefits">
                                     <label for="add_benif">
-                                        <img src="{{asset('front/assets/images/plus.png')}}" alt="">
+                                        <img src="{{asset('front/assets/images/plus.png')}}" alt="" >
                                         Add you own benefits
                                     </label>
                                 </div>
+
                             </div>
+                            @error('benefits')
+                            <small class="text-danger">{{$message}}</small>
+                            @enderror
                         </div>
+
                     </form>
+
                 </div>
             </div>
 

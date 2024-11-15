@@ -27,7 +27,11 @@ class Login extends Component
         ];
 
         if (Auth::attempt($credentials,$this->remember)) {
-            $this->redirectIntended('dashboard');
+            if (isCandidate()){
+            $this->redirectRoute('profile', navigate: true);
+
+            }
+            else $this->redirectIntended('jobs', navigate: true);
         }
 
 

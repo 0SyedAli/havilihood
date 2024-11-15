@@ -14,8 +14,8 @@
                 <div class="col-12">
                     <div class="d-flex align-items-center gap-5">
                         <button class="back_btn" wire:click="previous" ><img src="{{asset('front/assets/images/arrow_left.png')}}" alt="">Back</button>
-                        <a href="javascript:;" wire:click="next" class="btn3 btn_post">
-                            <img src="assets/images/round_plus.png" alt="">
+                        <a href="#" wire:click.prevent="next()" class="btn3 btn_post">
+                            <img src="{{asset('front/assets/images/round_plus.png')}}" alt="">
                             Continue
                         </a>
                     </div>

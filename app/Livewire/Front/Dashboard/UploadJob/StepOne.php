@@ -2,23 +2,29 @@
 
 namespace App\Livewire\Front\Dashboard\UploadJob;
 
+use Livewire\Attributes\On;
 use Livewire\Attributes\Validate;
 use Livewire\Component;
 
 class StepOne extends Component
 {
-        #[Validate('required|numeric')]
-        public $title = '';
+    #[Validate('required|string|max:191')]
+    public $title = '';
+    #[Validate('required|string|max:191')]
+    public $job_position = '';
+    #[Validate('required')]
+    public $country = '';
+    #[Validate('required')]
+    public $state = '';
 
-    #[Validate('required|numeric')]
-        public $job_position = '';
-
-        public function updated(){
-          $validate =  $this->validate();
-
-
-        }
-
+    #[On('step_next')]
+   public function next()
+   {
+       $this->dispatch('status',false);
+      $validate =  $this->validate();
+      $this->dispatch('step_1',$validate);
+    $this->dispatch('status',true);
+   }
 
     public function render()
     {

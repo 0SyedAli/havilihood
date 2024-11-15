@@ -2,12 +2,13 @@
 
 namespace App\Livewire\Front\Dashboard\UploadJob;
 
+use Livewire\Attributes\On;
 use Livewire\Component;
 
 class StepContainer extends Component
 {
 
-    public $current = 'front.dashboard.upload-job.step-one';
+    public $current = 'front.dashboard.upload-job.step-five';
 
     protected $steps = [
         'front.dashboard.upload-job.step-one',
@@ -18,16 +19,24 @@ class StepContainer extends Component
         'front.dashboard.upload-job.step-six',
     ];
 
+    #[On('status')]
+    public function validateStep($status){
+        if($status){
+            $currentIndex = array_search($this->current, $this->steps);
+            $this->current = $this->steps[$currentIndex + 1];
+        }
+
+    }
+
     public function next()
     {
-        $currentIndex = array_search($this->current, $this->steps);
-        $this->current = $this->steps[$currentIndex + 1];
+        $this->dispatch('step_next');
     }
     public function previous()
     {
         $currentIndex = array_search($this->current, $this->steps);
 
-        $this->current = $this->steps[$currentIndex - 1];
+        $this->current = $this->steps[ $currentIndex - 1];
     }
 
     public function render()

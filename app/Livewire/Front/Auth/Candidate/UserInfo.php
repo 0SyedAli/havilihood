@@ -14,6 +14,14 @@ class UserInfo extends Component
     public $open_remote = false;
     public $work_authorizations  = [];
 
+    public function mount()
+    {
+        if (!auth()->user()->verified_at){
+            $this->redirectRoute('otp',navigate: true);
+            $this->dispatch('error','user is not verified');
+        }
+    }
+
     public function save()
     {
 
