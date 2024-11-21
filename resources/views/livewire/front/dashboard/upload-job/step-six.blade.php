@@ -6,78 +6,71 @@
                 <table class="table">
                     <tbody>
                     <tr>
-                        <th>Job title</td>
-                        <td>Data Scientist</td>
-                        <td><i class="fa-light fa-pen"></i></td>
+                        <th>Job title</th>
+                        <td>{{$stepOneData['title'] ?? null}}</td>
+                        <td><i role="button" class="fa-light fa-pen" @click="$dispatch('jumpToStep',{step : 'front.dashboard.upload-job.step-one'})" ></i></td>
                     </tr>
                     <tr>
-                        <th>Which option best describes this job's position?</td>
-                        <td>Onsite</td>
-                        <td><i class="fa-light fa-pen"></i></td>
+                        <th>Which option best describes this job's position?</th>
+                        <td>{{$stepOneData['job_position'] ?? null}}</td>
+                        <td><i role="button" class="fa-light fa-pen" @click="$dispatch('jumpToStep',{step : 'front.dashboard.upload-job.step-one'})"></i></td>
                     </tr>
                     <tr>
-                        <th>Location?</td>
-                        <td>USA, New York, Manhattan</td>
-                        <td><i class="fa-light fa-pen"></i></td>
+                        <th>Location?</th>
+                        <td>{{$stepOneData['country'] ?? null}}, {{$stepOneData['state'] ?? null}}</td>
+                        <td><i role="button" class="fa-light fa-pen" @click="$dispatch('jumpToStep',{step : 'front.dashboard.upload-job.step-one'})"></i></td>
                     </tr>
-
+                @if( isset($stepTwoData['skills']))
+                    @foreach($stepTwoData['skills'] as $key => $skill)
                     <tr>
-                        <th>How many years of experience do you have (skill)?</td>
-                        <td>XXXXX XXX</td>
-                        <td><i class="fa-light fa-pen"></i></td>
+                        <th>How many years of experience do you have (skill {{$key > 0 ?? null}})?</th>
+                        <td>{{$skill}}</td>
+                        <td><i role="button" class="fa-light fa-pen" @click="$dispatch('jumpToStep',{step : 'front.dashboard.upload-job.step-two'})"></i></td>
                     </tr>
+                    @endforeach
+                @endif
                     <tr>
-                        <th>How many years of experience do you have (skill 2)?</td>
-                        <td>XXXXX XXX</td>
-                        <td><i class="fa-light fa-pen"></i></td>
-                    </tr>
-                    <tr>
-                        <th>How many years of experience do you have (skill 3)?</td>
-                        <td>XXXXX XXX</td>
-                        <td><i class="fa-light fa-pen"></i></td>
+                        <th>Job type</th>
+                        <td>{{$stepThreeData['job_type'] ?? null}}</td>
+                        <td><i role="button" class="fa-light fa-pen" @click="$dispatch('jumpToStep',{step : 'front.dashboard.upload-job.step-three'})"></i></td>
                     </tr>
                     <tr>
-                        <th>Job type</td>
-                        <td>US citizen</td>
-                        <td><i class="fa-light fa-pen"></i></td>
+                        <th>What is your authorization requirement?</th>
+                        <td>{{$stepThreeData['work_authorization'] ?? null}}</td>
+                        <td><i role="button" class="fa-light fa-pen" @click="$dispatch('jumpToStep',{step : 'front.dashboard.upload-job.step-three'})"></i></td>
                     </tr>
                     <tr>
-                        <th>What is your authorization requirement?</td>
-                        <td>XXXXX XXX</td>
-                        <td><i class="fa-light fa-pen"></i></td>
+                        <th>Expected hours per week</th>
+                        <td>{{$stepThreeData['hour_start'] ?? null}} {{$stepThreeData['hour_end'] ?? null}}</td>
+                        <td><i  role="button" class="fa-light fa-pen" @click="$dispatch('jumpToStep',{step : 'front.dashboard.upload-job.step-three'})"></i></td>
                     </tr>
                     <tr>
-                        <th>Expected hours per week</td>
-                        <td>XXXXX XXX</td>
-                        <td><i class="fa-light fa-pen"></i></td>
+                        <th>Schedule</th>
+                        <td>{{$stepThreeData['schedule'] ?? null}}</td>
+                        <td><i role="button" class="fa-light fa-pen" @click="$dispatch('jumpToStep',{step : 'front.dashboard.upload-job.step-three'})"></i></td>
                     </tr>
                     <tr>
-                        <th>Schedule</td>
-                        <td>XXXXX XXX</td>
-                        <td><i class="fa-light fa-pen"></i></td>
+                        <th>Pay ({{$stepFourData['pay_period'] ?? null}})</th>
+                        <td>${{$stepFourData['salary_start'] ?? null}} - ${{$stepFourData['salary_end'] ?? null}}</td>
+                        <td><i role="button" class="fa-light fa-pen" @click="$dispatch('jumpToStep',{step : 'front.dashboard.upload-job.step-four'})"></i></td>
                     </tr>
                     <tr>
-                        <th>Pay (per hour)</td>
-                        <td>$25 - $30</td>
-                        <td><i class="fa-light fa-pen"></i></td>
+                        <th>Benefits</th>
+                        <td>{{implode(',',  $stepFourData['benefits'] ?? [])  }}</td>
+                        <td><i role="button" class="fa-light fa-pen" @click="$dispatch('jumpToStep',{step : 'front.dashboard.upload-job.step-four'})"></i></td>
                     </tr>
                     <tr>
-                        <th>Benefits</td>
-                        <td>Dental insurance, Vision insurance</td>
-                        <td><i class="fa-light fa-pen"></i></td>
+                        <th>Job description</th>
+                        <td><a href="javascript:;" data-bs-target="#forward_link2" data-bs-toggle="modal">View</a></td>
+                        <td><i role="button" class="fa-light fa-pen" @click="$dispatch('jumpToStep',{step : 'front.dashboard.upload-job.step-five'})"></i></td>
                     </tr>
                     <tr>
-                        <th>Job description</td>
-                        <td><a href="javascript:;">View</a></td>
-                        <td><i class="fa-light fa-pen"></i></td>
-                    </tr>
-                    <tr>
-                        <th>Application collection</td>
+                        <th>Application collection</th>
                         <td>Talenttube Dashboard</td>
                         <td><i class="fa-light fa-pen"></i></td>
                     </tr>
                     <tr>
-                        <th>Send daily updates to</td>
+                        <th>Send daily updates to</th>
                         <td>Email</td>
                         <td><i class="fa-light fa-pen"></i></td>
                     </tr>
@@ -86,4 +79,5 @@
             </div>
         </div>
     </div>
+
 </div>

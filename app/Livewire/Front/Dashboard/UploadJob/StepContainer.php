@@ -8,7 +8,7 @@ use Livewire\Component;
 class StepContainer extends Component
 {
 
-    public $current = 'front.dashboard.upload-job.step-five';
+    public $current = 'front.dashboard.upload-job.step-one';
 
     protected $steps = [
         'front.dashboard.upload-job.step-one',
@@ -32,6 +32,12 @@ class StepContainer extends Component
     {
         $this->dispatch('step_next');
     }
+
+    #[On('jumpToStep')]
+    public function jumpToStep($step){
+        $this->current = $step;
+    }
+
     public function previous()
     {
         $currentIndex = array_search($this->current, $this->steps);

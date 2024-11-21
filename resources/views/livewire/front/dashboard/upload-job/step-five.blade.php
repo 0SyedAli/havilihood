@@ -28,9 +28,7 @@
 @script
 <script>
 
-
-    Livewire.on('rendered', () => {
-
+    setTimeout(()=>{
         // Create new editor instance
         ClassicEditor.create(document.querySelector("#editor"))
             .then(editor => {
@@ -40,6 +38,20 @@
                 editor.setData(textarea.value);
             })
             .catch(error => console.error(error));
+    })
+
+    Livewire.on('rendered', () => {
+        setTimeout(()=>{
+            // Create new editor instance
+            ClassicEditor.create(document.querySelector("#editor"))
+                .then(editor => {
+                    editor.model.document.on('change:data', () => {
+                        Livewire.dispatch('updateDescription', [editor.getData()]);
+                    });
+                    editor.setData(textarea.value);
+                })
+                .catch(error => console.error(error));
+        })
     });
 
 </script>

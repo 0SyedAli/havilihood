@@ -7,7 +7,7 @@
                     <h2 class="sjd_h2" style="margin: 50px 0 40px;">Jobs Posted</h2>
                 </div>
             </div>
-            <livewire:dynamic-component :is="$current" :key="$current" />
+            <livewire:dynamic-component :step_1 :is="$current" :key="$current" />
             <br>
             <br>
             <div class="row">

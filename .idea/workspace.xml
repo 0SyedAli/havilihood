@@ -6,6 +6,22 @@
   <component name="ChangeListManager">
     <list default="true" id="9da93a87-7d1d-434d-b85f-3d17b313c4e8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepContainer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepContainer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepFive.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepFive.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepFour.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepFour.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepOne.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepOne.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepSix.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepSix.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepThree.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepThree.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepTwo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepTwo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Job.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/JobSkill.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/JobSkill.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2024_11_14_175506_create_jobs_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2024_11_14_175549_create_job_skills_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2024_11_14_175549_create_job_skills_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/upload-job/step-container.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/upload-job/step-container.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/upload-job/step-five.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/upload-job/step-five.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/upload-job/step-six.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/upload-job/step-six.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/upload-job/step-three.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/upload-job/step-three.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +177,7 @@
     "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
     "WebServerToolWindowPanel.toolwindow.show.size": "false",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/wamp64/www/laptop-backend",
+    "last_opened_file_path": "C:/wamp64/www/date420",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -224,6 +240,12 @@
       <workItem from="1731601087931" duration="28423000" />
       <workItem from="1731687351983" duration="2497000" />
       <workItem from="1731700385941" duration="1878000" />
+      <workItem from="1731945967643" duration="18873000" />
+      <workItem from="1731968636490" duration="4792000" />
+      <workItem from="1732033052612" duration="3537000" />
+      <workItem from="1732039359643" duration="621000" />
+      <workItem from="1732118026047" duration="3297000" />
+      <workItem from="1732127304095" duration="79000" />
     </task>
     <servers />
   </component>

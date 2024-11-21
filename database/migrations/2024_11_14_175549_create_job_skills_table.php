@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('job_skills', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_job_id')->constrained('user_job');
             $table->string('name');
             $table->string('ideal_answer');
             $table->boolean('required');
