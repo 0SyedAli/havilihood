@@ -3,20 +3,24 @@
 namespace App\Livewire\Front\Dashboard\UploadJob;
 
 use Livewire\Attributes\On;
+use Livewire\Attributes\Session;
 use Livewire\Attributes\Validate;
 use Livewire\Component;
 
 class StepTwo extends Component
 {
-
+    #[Session]
     public $items = [''];
 
     #[Validate(onUpdate: false)]
+    #[Session]
     public $skills = [''];
     #[Validate(onUpdate: false)]
+    #[Session]
     public $ideal_answer = [''];
 
     #[Validate(onUpdate: false)]
+    #[Session]
     public $required = [true];
 
 
@@ -43,7 +47,7 @@ class StepTwo extends Component
     {
         $this->dispatch('status',false);
         $validate =  $this->validate( );
-        $this->dispatch('step_2',$validate);
+        \session(['step_two' => $validate]);
         $this->dispatch('status',true);
     }
     public function add_item()

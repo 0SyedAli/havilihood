@@ -4,7 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Job extends Model
+class UserJob extends Model
 {
-    //
+    protected $guarded;
+
+
 }
