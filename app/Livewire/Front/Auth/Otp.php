@@ -24,9 +24,10 @@ class Otp extends Component
     {
         $user = Auth::user();
         $otpCode = rand(100000, 999999);
-        \App\Models\Otp::create([
+        \App\Models\Otp::updateOrCreate(['email' => $user->email],[
             'email' => $user->email,
             'otp_code' => $otpCode,
+            'is_verified' => false,
         ]);
         $data = [
             'name' => $user->name,

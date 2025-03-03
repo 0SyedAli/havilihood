@@ -30,9 +30,12 @@
             <div class="row flex-column flex-md-row">
                 <div class="col-md-6">
                     <div class="saved_jobs_left " >
-                        @for($i = 0; $i < 8; $i++ )
-                        <livewire:front.components.job-card />
-                        @endfor
+                        @foreach($jobs as $job)
+                            <a href="#" wire:click.prevent="getAssessments" >
+
+                        <livewire:front.components.job-card :job="$job" />
+                            </a>
+                        @endforeach
                     </div>
                 </div>
                 <div class="col-md-6">

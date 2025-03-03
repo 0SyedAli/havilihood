@@ -14,6 +14,12 @@ return [
     |
     */
 
+    'criteria' => [
+        'api_key' => env('CRITERIA_API_KEY'),
+        'base_url' => env('CRITERIA_API_URL'),
+    ],
+
+
     'postmark' => [
         'token' => env('POSTMARK_TOKEN'),
     ],

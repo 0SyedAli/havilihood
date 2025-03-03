@@ -44,9 +44,10 @@ class Register extends Component
         ]);
         Auth::login($user);
         $otpCode = rand(100000, 999999);
-        Otp::create([
+        Otp::updateOrCreate(['email' => $this->email],[
             'email' => $user->email,
             'otp_code' => $otpCode,
+            'is_verified' => false,
         ]);
         $data = [
             'name' => $user->name,
