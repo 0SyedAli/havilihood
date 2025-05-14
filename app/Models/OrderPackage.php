@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class benefits extends Model
+class OrderPackage extends Model
 {
-    //
+    protected $guarded;
 }

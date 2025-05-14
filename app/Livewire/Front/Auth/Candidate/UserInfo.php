@@ -11,14 +11,14 @@ class UserInfo extends Component
     public $job_title = '';
     public $job_types = [];
     public $location = '';
-    public $open_remote = false;
+    public $work_model = '';
     public $work_authorizations  = [];
 
     public function mount()
     {
-        if (!auth()->user()->verified_at){
-            $this->redirectRoute('otp',navigate: true);
+        if (!auth()->user()->email_verified_at){
             $this->dispatch('error','user is not verified');
+            $this->redirectRoute('otp');
         }
     }
 
@@ -29,20 +29,22 @@ class UserInfo extends Component
             'job_title' => 'required|string|max:191',
             'job_types' => 'required|array|min:1',
             'location' => 'required|string|max:191',
+            'work_model' => 'required|string|max:191',
             'work_authorizations' => 'required|array|min:1',
         ]);
 
 
 
-        Candidate::create([
+        Candidate::updateOrCreate(['user_id' => auth()->id()],[
             'job_title' => $this->job_title,
-            'job_types' => implode(',',$this->job_types),
+            'job_types' => implode(', ',$this->job_types),
             'location' => $this->location,
-            'work_authorizations' => implode(',',$this->work_authorizations) ,
+            'work_model' => $this->work_model,
+            'work_authorizations' => implode(', ',$this->work_authorizations) ,
             'user_id' => auth()->id(),
         ]);
 
-        $this->redirectRoute('profile.anaylist', navigate: true);
+        $this->redirectRoute('profile.analyst');
 
     }
     public function render()

@@ -8,7 +8,10 @@ use Livewire\Component;
 class StepContainer extends Component
 {
 
+
+
     public $current = 'front.dashboard.upload-job.step-one';
+    public $currentIndex = 0;
 
     protected $steps = [
         'front.dashboard.upload-job.step-one',
@@ -19,13 +22,19 @@ class StepContainer extends Component
         'front.dashboard.upload-job.step-six',
     ];
 
+    public function mount(){
+        session()->forget(['step_one', 'step_two', 'step_three', 'step_four', 'step_five']);
+        if (session()->has('job_id')) {
+            $this->current = 'front.dashboard.upload-job.step-six';
+        }
+    }
+
     #[On('status')]
     public function validateStep($status){
         if($status){
-            $currentIndex = array_search($this->current, $this->steps);
-            $this->current = $this->steps[$currentIndex + 1];
+            $this->currentIndex  = array_search($this->current, $this->steps);
+            $this->current = $this->steps[ $this->currentIndex +1];
         }
-
     }
 
     public function next()
@@ -36,13 +45,19 @@ class StepContainer extends Component
     #[On('jumpToStep')]
     public function jumpToStep($step){
         $this->current = $step;
+        $this->currentIndex = array_search($this->current, $this->steps);
     }
+
+
 
     public function previous()
     {
-        $currentIndex = array_search($this->current, $this->steps);
-
-        $this->current = $this->steps[ $currentIndex - 1];
+            $this->currentIndex  = array_search($this->current, $this->steps);
+            if ($this->currentIndex > 0){
+            $this->current = $this->steps[ $this->currentIndex - 1];
+            }else{
+                $this->redirectRoute('job.posted');
+            }
     }
 
     public function render()

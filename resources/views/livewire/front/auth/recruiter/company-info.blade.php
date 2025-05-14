@@ -7,42 +7,76 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="info_input">
-                            <input type="text" required placeholder="Company Website">
+                            <input type="text" required placeholder="Company Name" wire:model="company_name">
                         </div>
+                        @error('company_name')
+                        <small class="text-danger">{{$message}}</small>
+                        @enderror
                     </div>
                     <div class="col-12">
                         <div class="info_input">
-                            <input type="text" placeholder="Job Fetch URL">
+                            <input type="url" required placeholder="Company Website" wire:model="website">
+                        </div>
+                        @error('website')
+                        <small class="text-danger">{{$message}}</small>
+                        @enderror
+                    </div>
+                    <div class="col-12">
+                        <div class="info_input">
+                            <input type="email" required placeholder="Work Email" wire:model="work_email">
+                        </div>
+                        @error('work_email')
+                        <small class="text-danger">{{$message}}</small>
+                        @enderror
+                    </div>
+                    <div class="col-12">
+                        <div class="info_input">
+                            <input type="url" placeholder="Job Fetch URL" wire:model="job_url">
                             <p><span>NOTE:</span> Link to you job hiring application page</p>
                         </div>
+                        @error('job_url')
+                        <small class="text-danger">{{$message}}</small>
+                        @enderror
                     </div>
                     <div class="col-sm-6">
                         <div class="info_input">
-                            <input type="text" placeholder="Number of Employees">
+                            <input type="number" placeholder="Number of Employees" wire:model="total_employees">
                         </div>
+                        @error('total_employees')
+                        <small class="text-danger">{{$message}}</small>
+                        @enderror
                     </div>
                     <div class="col-sm-6">
                         <div class="info_input">
-                            <input type="text" placeholder="Employment Type">
+                            <input type="text" placeholder="Employment Type" wire:model="employment_type">
                         </div>
+                        @error('employment_type')
+                        <small class="text-danger">{{$message}}</small>
+                        @enderror
                     </div>
                     <div class="col-12">
                         <div class="info_input">
-                            <input type="text" placeholder="Headquarter City">
+                            <input type="text" placeholder="Headquarter City" wire:model="location">
                         </div>
+                        @error('location')
+                        <small class="text-danger">{{$message}}</small>
+                        @enderror
                     </div>
                     <div class="col-12">
                         <div class="upload_input2">
-                            <img src="{{asset('front/assets/images/upload_btn2.png')}}" alt="">
-                            <input type="file" name="" id="">
+                            <img src="{{$image_path?->temporaryUrl() ??  asset('public/front/assets/images/upload_btn2.png')}}" alt="" >
+                            <input type="file" id="company_logo"  wire:model="image_path">
                         </div>
                         <div class="info_input readonly_input">
                             <input type="text" readonly="true" aria-readonly="true" placeholder="Upload Company Logo">
                         </div>
+                        @error('image_path')
+                        <small class="text-danger">{{$message}}</small>
+                        @enderror
                     </div>
                 </div>
                 <div class="info_btn1">
-                    <button class="btn1" role="button" data-bs-toggle="modal" data-bs-target="#comfirm_detail">
+                    <button class="btn1" role="button" wire:click="saveCompany">
                         Continue
                     </button>
                 </div>
@@ -148,7 +182,7 @@
                                     <h5>Company Logo</h5>
                                 </th>
                                 <td class="col-7">
-                                    <img src="{{asset('front/assets/images/compo_img.png')}}" class="img-fluid" alt="">
+                                    <img src="{{asset('public/front/assets/images/compo_img.png')}}" class="img-fluid" alt="">
                                 </td>
                             </tr>
                             </tbody>
@@ -192,7 +226,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="title d-flex flex-column align-items-center text-center px-4">
-                    <img src="{{asset('front/assets/images/welcome_logo.png')}}" alt="">
+                    <img src="{{asset('public/front/assets/images/welcome_logo.png')}}" alt="">
                     <p>Pharetra convallis posuere morbi leo. Vestibulum lectus mauris ultrices eros in. Lobortis elementum </p>
                 </div>
                 <div class="modal-body pt-5">

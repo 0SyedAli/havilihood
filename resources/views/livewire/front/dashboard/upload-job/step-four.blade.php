@@ -28,15 +28,18 @@
                         <div class="step_input row">
                             <div class="col-6 d-flex align-items-center gap-4">
                                 <p>Minimum</p>
+                                <div class="asc">
                                 <input type="number" class="cust_input" wire:model.live="salary_start">
-
+                                </div>
                                 @error('salary_start')
                                 <small class="text-danger">{{$message}}</small>
                                 @enderror
                             </div>
                             <div class="col-6 d-flex align-items-center gap-4">
                                 <p>Maximum</p>
+                                <div class="asc">
                                 <input type="number" class="cust_input" wire:model.live="salary_end">
+                                </div>
                                 @error('salary_end')
                                 <small class="text-danger">{{$message}}</small>
                                 @enderror
@@ -49,35 +52,35 @@
                                 <div class="custom_radio">
                                     <input type="checkbox" id="full_time" name="cr_job_type5" value="Health insurance" wire:model.live="benefits">
                                     <label for="full_time">
-                                        <img src="{{asset('front/assets/images/plus.png')}}" alt="" >
+                                        <img src="{{asset('public/front/assets/images/plus.png')}}" alt="" >
                                         Health insurance
                                     </label>
                                 </div>
                                 <div class="custom_radio">
                                     <input type="checkbox" id="part_time" name="cr_job_type5" value="Paid time off" wire:model.live="benefits">
                                     <label for="part_time">
-                                        <img src="{{asset('front/assets/images/plus.png')}}" alt="" >
+                                        <img src="{{asset('public/front/assets/images/plus.png')}}" alt="" >
                                         Paid time off
                                     </label>
                                 </div>
                                 <div class="custom_radio">
                                     <input type="checkbox" id="contract" name="cr_job_type5" value="Dental insurance" wire:model.live="benefits">
                                     <label for="contract">
-                                        <img src="{{asset('front/assets/images/plus.png')}}" alt="" >
+                                        <img src="{{asset('public/front/assets/images/plus.png')}}" alt="" >
                                         Dental insurance
                                     </label>
                                 </div>
                                 <div class="custom_radio">
                                     <input type="checkbox" id="freelance" name="cr_job_type5" value="Vision insurance" wire:model.live="benefits">
                                     <label for="freelance">
-                                        <img src="{{asset('front/assets/images/plus.png')}}" alt="" >
+                                        <img src="{{asset('public/front/assets/images/plus.png')}}" alt="" >
                                         Vision insurance
                                     </label>
                                 </div>
                                 <div class="custom_radio">
                                     <input type="checkbox" id="add_benif" name="cr_job_type5" value="Add you own benefits" wire:model.live="benefits">
                                     <label for="add_benif">
-                                        <img src="{{asset('front/assets/images/plus.png')}}" alt="" >
+                                        <img src="{{asset('public/front/assets/images/plus.png')}}" alt="" >
                                         Add you own benefits
                                     </label>
                                 </div>

@@ -11,21 +11,28 @@ class StepThree extends Component
 {
 
     #[Validate('required|string|max:191')]
-    #[Session]
     public $job_type = '';
     #[Validate('required|string|max:191')]
-    #[Session]
     public $work_authorization = '';
     #[Validate('required|numeric|max_digits:191')]
-    #[Session]
     public $hour_start = '';
     #[Validate('required|numeric|max_digits:191|gt:hour_start')]
-    #[Session]
     public $hour_end;
 
     #[Validate('required|string|max:191')]
-    #[Session]
     public $schedule = '';
+
+
+    public function mount()
+    {
+        if (session()->has('step_three') ){
+            $this->job_type = \session('step_three')['job_type'];
+            $this->work_authorization = \session('step_three')['work_authorization'];
+            $this->hour_start = \session('step_three')['hour_start'];
+            $this->hour_end = \session('step_three')['hour_end'];
+            $this->schedule = \session('step_three')['schedule'];
+        }
+    }
 
     #[On('step_next')]
     public function next()

@@ -7,7 +7,7 @@
                 <h3>Upload your resume</h3>
                 <form action="{{route('personality.analysis')}}" method="get" class="personality_anaylysis p-0">
                     <div class="profile-anaylist-item">
-                        <img src="{{asset('front/assets/images/upload_img.png')}}" alt="">
+                        <img src="{{asset('public/front/assets/images/upload_img.png')}}" alt="">
                         <input type="file" name="" id="">
                     </div>
                     <label for="">File should be in PDF or WORD format and must not exceed 10MB file size. </label>

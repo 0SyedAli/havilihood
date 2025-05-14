@@ -2,20 +2,13 @@
 
 namespace App\Livewire;
 
+use Livewire\Attributes\Layout;
 use Livewire\Component;
 
 class Home extends Component
 {
-    public $count = 1;
 
-   public function plus(){
-    $this->count++;
-    }
-
-   public function minus(){
-    $this->count--;
-    }
-
+    #[Layout('components.layouts.main')]
     public function render()
     {
         return view('livewire.home');

@@ -28,10 +28,10 @@ class Login extends Component
 
         if (Auth::attempt($credentials,$this->remember)) {
             if (isCandidate()){
-            $this->redirectRoute('profile', navigate: true);
+            $this->redirectRoute('profile',Auth::user()->slug);
 
             }
-            else $this->redirectIntended('jobs', navigate: true);
+            else $this->redirectRoute('jobs');
         }
 
 

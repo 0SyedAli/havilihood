@@ -3,7 +3,7 @@
         <livewire:front.auth.candidate.side-section />
         <div class="dash_right">
             <div class="dash_right_inner">
-                <img src="{{asset('front/assets/images/logo_black.png')}}" class="mb-5 d-inline-block d-lg-none" width="200" alt="">
+                <img src="{{asset('public/front/assets/images/logo_black.png')}}" class="mb-5 d-inline-block d-lg-none" width="200" alt="">
                 <h2>Login</h2>
                 <p>Enter your details</p>
                 <form wire:submit.prevent="login">
@@ -30,7 +30,7 @@
                                 Remember me
                             </label>
                         </div>
-                        <a href="{{route('forget.password')}}" wire:navigate>Forget Password</a>
+                        <a href="{{route('forget.password')}}" >Forget Password</a>
                     </div>
                     <div class="mt-5">
                         <button class="btn1" wire:loading.remove  wire:target="login">
@@ -43,7 +43,7 @@
                         </button>
                     </div>
                     <div class="dhac">
-                        <p>Dont have an account? <a href="{{route('register')}}" wire:navigate >SIGN UP</a></p>
+                        <p>Dont have an account? <a href="{{route('register')}}"  >SIGN UP</a></p>
                     </div>
                 </form>
             </div>

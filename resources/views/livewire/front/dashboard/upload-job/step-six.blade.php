@@ -24,7 +24,7 @@
                     @foreach($stepTwoData['skills'] as $key => $skill)
                     <tr>
                         <th>How many years of experience do you have (skill {{$key > 0 ?? null}})?</th>
-                        <td>{{$skill}}</td>
+                        <td>{{$skill->name ??$skill}}</td>
                         <td><i role="button" class="fa-light fa-pen" @click="$dispatch('jumpToStep',{step : 'front.dashboard.upload-job.step-two'})"></i></td>
                     </tr>
                     @endforeach
@@ -56,17 +56,17 @@
                     </tr>
                     <tr>
                         <th>Benefits</th>
-                        <td>{{implode(',',  $stepFourData['benefits'] ?? [])  }}</td>
+                        <td>{{implode(', ',  $stepFourData['benefits'] ?? [])  }}</td>
                         <td><i role="button" class="fa-light fa-pen" @click="$dispatch('jumpToStep',{step : 'front.dashboard.upload-job.step-four'})"></i></td>
                     </tr>
                     <tr>
                         <th>Job description</th>
-                        <td><a href="javascript:;" data-bs-target="#forward_link2" data-bs-toggle="modal">View</a></td>
+                        <td><a href="javascript:;" data-bs-target="#forward_link2" @click="$dispatch('jumpToStep',{step : 'front.dashboard.upload-job.step-five'})" data-bs-toggle="modal">View</a></td>
                         <td><i role="button" class="fa-light fa-pen" @click="$dispatch('jumpToStep',{step : 'front.dashboard.upload-job.step-five'})"></i></td>
                     </tr>
                     <tr>
                         <th>Application collection</th>
-                        <td>Talenttube Dashboard</td>
+                        <td>Hivelihood Dashboard</td>
                         <td><i class="fa-light fa-pen"></i></td>
                     </tr>
                     <tr>

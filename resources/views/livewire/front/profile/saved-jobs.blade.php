@@ -6,33 +6,28 @@
             <div class="row">
                 <div class="col-12">
                     <h2 class="sjd_h2">Saved Jobs</h2>
+                    <livewire:front.components.job-filter />
 
-                    <div class="filter_top d-flex gap-5 alig-items-center">
-                        <button class="filter_btn" data-bs-target="#staticBackdrop" data-bs-toggle="modal">Filter <span>+</span></button>
-                        <div class="sjl_itm_label_container">
-                            <label for="">Computer</label>
-                            <label for="">Programming</label>
-                            <label for="">Software</label>
-                            <label for="">Technology</label>
-                            <label for="">Full-Time</label>
-                            <label for="">Philadelphia</label>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="row flex-column flex-md-row">
-                <div class="col-md-6">
-                    <div class="saved_jobs_left">
-                        @for($i = 0; $i < 8; $i++ )
-
-                        <livewire:front.components.job-card />
-                        @endfor
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <livewire:front.components.job-detail-section />
-                </div>
+                @if(!$jobs->count())
+                    <livewire:front.components.alert-bar alertType="alert-info" message="Saved jobs not found">
+                        @endif
+                        <div class="col-md-6">
+                            <div class="saved_jobs_left">
+                                @foreach($jobs as $job)
+                                    <livewire:front.components.job-card :job="$job" wire:key="$job->id" />
+                                @endforeach
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            @if($jobs->count())
+                                <livewire:front.components.job-detail-section :id="$jobs[0]->id" />
+                            @endif
+                        </div>
             </div>
+
         </div>
     </div>
 </section>

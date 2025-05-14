@@ -23,7 +23,7 @@ class RoleMiddleware
         $userRole = Auth::user()->role;
 
         if ($userRole !== $role) {
-            return response()->json(['status' => 'error', 'message' => 'forbidden request'], 401);
+            return redirect('/')->with('error', 'You are not authorized to access this page.');
         }
 
         return $next($request);

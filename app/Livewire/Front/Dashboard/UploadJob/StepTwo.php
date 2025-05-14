@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Front\Dashboard\UploadJob;
 
+use App\Models\JobSkill;
 use Livewire\Attributes\On;
 use Livewire\Attributes\Session;
 use Livewire\Attributes\Validate;
@@ -9,19 +10,28 @@ use Livewire\Component;
 
 class StepTwo extends Component
 {
-    #[Session]
     public $items = [''];
+    public $skill_ids = [];
 
     #[Validate(onUpdate: false)]
-    #[Session]
     public $skills = [''];
     #[Validate(onUpdate: false)]
-    #[Session]
     public $ideal_answer = [''];
 
     #[Validate(onUpdate: false)]
-    #[Session]
     public $required = [true];
+
+    public function mount()
+    {
+        if (session()->has('step_two')) {
+            $this->items =  \session('step_two')['skills'];
+            $this->skills =  \session('step_two')['skills'];
+            $this->ideal_answer =  \session('step_two')['ideal_answer'];
+            $this->required =  \session('step_two')['required'];
+            $this->skill_ids =  \session('step_two')['id'] ?? [];
+        }
+//        dd(\session('step_two'));
+    }
 
 
     public function rules()
@@ -59,6 +69,9 @@ class StepTwo extends Component
     }
     public function remove_item($index)
     {
+        if ( $this->skill_ids[$index] ?? null) {
+            JobSkill::destroy($this->skill_ids[$index]);
+        }
         unset($this->items[$index]);
         unset($this->skills[$index]);
         unset($this->ideal_answer[$index]);

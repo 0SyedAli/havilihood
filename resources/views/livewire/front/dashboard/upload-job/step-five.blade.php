@@ -8,13 +8,12 @@
             <div id="editor" >
                 <textarea id="textarea" wire:model="description"></textarea>
             </div>
-
         </div>
 
         <div class="upload_pdf_docs">
 
             <input type="file" wire:model.live="document">
-            <img src="{{asset('front/assets/images/upload_icon2.png')}}" alt="">
+            <img src="{{asset('public/front/assets/images/upload_icon2.png')}}" alt="">
             <label for="">Upload a PDF or document</label>
 
         </div>
@@ -43,6 +42,8 @@
     Livewire.on('rendered', () => {
         setTimeout(()=>{
             // Create new editor instance
+            if(document.getElementById('editor')){
+
             ClassicEditor.create(document.querySelector("#editor"))
                 .then(editor => {
                     editor.model.document.on('change:data', () => {
@@ -51,6 +52,7 @@
                     editor.setData(textarea.value);
                 })
                 .catch(error => console.error(error));
+    }
         })
     });
 

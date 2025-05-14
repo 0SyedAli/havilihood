@@ -10,17 +10,24 @@ use Livewire\Component;
 class StepOne extends Component
 {
     #[Validate('required|string|max:191')]
-    #[Session]
     public $title = '';
     #[Validate('required|string|max:191')]
-    #[Session]
     public $job_position = '';
-    #[Session]
     #[Validate('required')]
     public $country = '';
-    #[Session]
     #[Validate('required')]
     public $state = '';
+
+    public function mount(){
+
+        if (session()->has('step_one') ){
+            $this->title = \session('step_one')['title'];
+            $this->job_position = \session('step_one')['job_position'];
+            $this->country = \session('step_one')['country'];
+            $this->state = \session('step_one')['state'];
+        }
+    }
+
 
     #[On('step_next')]
    public function next()

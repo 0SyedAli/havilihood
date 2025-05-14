@@ -58,31 +58,31 @@
                     <small class="text-danger">{{$message}}</small>
                     @enderror
                 </div>
+
                 <div class="info_in_ch d-flex align-items-end justify-content-between">
-                    <div class="info_input m-0">
-                        <label for="">Location <span>*</span></label>
-                        <select class="form-select" aria-label="Select location" wire:model="location">
-                            <option selected>Select location</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
+                    <div class="info_input">
+                        <label for="">Location<span>*</span></label>
+                        <input type="text" placeholder="Enter Location" wire:model="location">
                         @error('location')
                         <small class="text-danger">{{$message}}</small>
                         @enderror
                     </div>
-                    <div class="w25 px-0 d-flex align-items-center gap-2 info_check_label">
-                        <div class="custom-checkbox">
-                            <input class="form-check-input" type="checkbox"  id="check15" wire:model="open_remote">
-                            <div class="checkmark"></div>
-                        </div>
-                        <label class="form-check-label" for="check12">
-                            Open to Remote
-                        </label>
+                    <div class="info_input ">
+                        <label for="">Work Model <span>*</span></label>
+                        <select class="form-select" aria-label="Select location" wire:model="work_model">
+                            <option selected>Select Work Model</option>
+                            <option value="Onsite">Onsite</option>
+                            <option value="Remote">Remote</option>
+                            <option value="Hybrid">Hybrid</option>
+                        </select>
+                        @error('work_model')
+                        <small class="text-danger">{{$message}}</small>
+                        @enderror
                     </div>
+
                 </div>
                 <div class="info_check_container">
-                    <label for="">Work Authorization <span><img src="{{asset('front/assets/images/file-question-01.png')}}" width="30" alt=""></span></label>
+                    <label for="">Work Authorization <span><img src="{{asset('public/front/assets/images/file-question-01.png')}}" width="30" alt=""></span></label>
                     <div class="info_check_inner ">
 
                         <div class="w25 px-0 d-flex align-items-center gap-2">

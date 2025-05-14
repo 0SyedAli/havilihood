@@ -63,7 +63,7 @@
                         </button>
                     </div>
                     <div class="dhac">
-                        <p>Already have an account? <a href="{{route('login')}}" wire:navigate >LOGIN</a></p>
+                        <p>Already have an account? <a href="{{route('login')}}"  >LOGIN</a></p>
                     </div>
                 </form>
             </div>

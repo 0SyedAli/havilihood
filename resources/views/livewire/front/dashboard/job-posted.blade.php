@@ -10,12 +10,11 @@
             </div>
             <div>
                 <div class="row">
-                    @for($i = 0; $i < 4; $i++ )
-
-                    <div class="col-sm-6">
-                       <livewire:front.components.job-card />
+                    @foreach($jobs as $job )
+                    <div class="col-sm-6" wire:key="{{$job->id}}" >
+                       <livewire:front.components.job-card :job="$job" :key="$job->id" />
                     </div>
-                    @endfor
+                    @endforeach
 
                 </div>
             </div>
@@ -25,8 +24,8 @@
                     <br>
                     <br>
                     <br>
-                    <a href="{{route('upload.job')}}" wire:navigate class="btn3">
-                        <img src="{{asset('front/assets/images/round_plus.png')}}" alt="">
+                    <a href="{{route('upload.job')}}"  class="btn3">
+                        <img src="{{asset('public/front/assets/images/round_plus.png')}}" alt="">
                         Post a Job
                     </a>
                 </div>

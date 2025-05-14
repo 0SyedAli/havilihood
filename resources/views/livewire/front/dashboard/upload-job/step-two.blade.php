@@ -48,7 +48,7 @@
                 </div>
             @endforeach
             <button class="add_asc_btn" wire:click="add_item">
-                <img src="{{asset('front/assets/images/plus_round_brown.png')}}" alt="">
+                <img src="{{asset('public/front/assets/images/plus_round_brown.png')}}" alt="">
                 Add you question
             </button>
 

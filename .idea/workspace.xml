@@ -5,25 +5,123 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9da93a87-7d1d-434d-b85f-3d17b313c4e8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/components/layouts/main.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/emails/job-invitation.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/front/profile/profile_old.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/havelihood.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/havelihood.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RoleMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RoleMiddleware.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Auth/Candidate/PersonalityAnalysis.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Auth/Candidate/PersonalityAnalysis.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Auth/Candidate/UserInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Auth/Candidate/UserInfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Auth/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Auth/Login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Auth/Otp.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Auth/Otp.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Auth/Register.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Auth/Register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Auth/Recruiter/CompanyInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Auth/Recruiter/CompanyInfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Auth/Recruiter/EmployerInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Auth/Recruiter/EmployerInfo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Components/JobCard.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Components/JobCard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Components/JobDetailSection.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Components/JobDetailSection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/Candidates.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/Candidates.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/CompanyDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/CompanyDetail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/JobPosted.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/JobPosted.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/Jobs.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/Jobs.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Otp.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Otp.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepContainer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepContainer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepFive.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepFive.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepFour.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepFour.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepOne.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepOne.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepSix.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepSix.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepThree.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepThree.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepTwo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Dashboard/UploadJob/StepTwo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Profile/JobSuggestions.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Profile/JobSuggestions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Profile/Profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Profile/Profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Front/Profile/SavedJobs.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Front/Profile/SavedJobs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Livewire/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Livewire/Home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Candidate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Candidate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Company.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Company.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/JobSkill.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/JobSkill.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/ProfileInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/ProfileInfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Recruiter.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Recruiter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/UserJob.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/UserJob.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/benefits.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Benefit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/cache/packages.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/cache/packages.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bootstrap/cache/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/cache/services.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/providers.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/providers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2024_11_14_175549_create_job_skills_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2024_11_14_175549_create_job_skills_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/livewire.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/livewire.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2024_11_12_184242_create_companies_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2024_11_12_184242_create_companies_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2024_11_12_184318_create_recruiters_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2024_11_12_184318_create_recruiters_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2024_11_14_173643_create_profile_infos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2024_11_14_173643_create_profile_infos_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2024_11_14_175548_create_user_jobs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2024_11_14_175548_create_user_jobs_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/assets/css/animate.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/assets/css/animate.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/assets/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/assets/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/assets/css/clash-display.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/assets/css/clash-display.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/assets/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/assets/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/assets/css/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/assets/css/jquery-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/assets/css/owl.carousel.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/assets/css/owl.carousel.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/assets/css/owl.theme.default.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/assets/css/owl.theme.default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/assets/css/slick-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/assets/css/slick-theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/assets/css/slick.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/assets/css/slick.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/assets/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/assets/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/assets/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/assets/js/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/assets/js/fancybox.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/assets/js/fancybox.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/assets/js/jquery-3.6.3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/assets/js/jquery-3.6.3.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/assets/js/jquery-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/assets/js/jquery-ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/assets/js/owl.carousel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/assets/js/owl.carousel.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/assets/js/slick.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/assets/js/slick.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/assets/js/wow.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/assets/js/wow.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/assets/slick/config.rb" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/assets/slick/config.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/assets/slick/fonts/slick.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/assets/slick/fonts/slick.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/assets/slick/slick-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/assets/slick/slick-theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/assets/slick/slick-theme.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/assets/slick/slick-theme.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/assets/slick/slick-theme.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/assets/slick/slick-theme.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/assets/slick/slick-theme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/assets/slick/slick-theme.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/assets/slick/slick.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/assets/slick/slick.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/assets/slick/slick.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/assets/slick/slick.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/assets/slick/slick.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/assets/slick/slick.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/assets/slick/slick.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/assets/slick/slick.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/assets/slick/slick.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/assets/slick/slick.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/assets/slick/slick.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/assets/slick/slick.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/auth/candidate/personality-analysis.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/auth/candidate/personality-analysis.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/auth/candidate/profile-anaylist.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/auth/candidate/profile-anaylist.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/auth/candidate/side-section.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/auth/candidate/side-section.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/auth/candidate/upload-docs.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/auth/candidate/upload-docs.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/auth/candidate/user-info.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/auth/candidate/user-info.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/auth/recruiter/company-info.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/auth/recruiter/company-info.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/auth/recruiter/employer-info.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/auth/recruiter/employer-info.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/auth/recruiter/side-section.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/auth/recruiter/side-section.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/components/job-card.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/components/job-card.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/components/job-detail-section.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/components/job-detail-section.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/candidates.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/candidates.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/company-detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/company-detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/job-posted.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/job-posted.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/jobs.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/jobs.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/d1e0ee94079451272bb6df7a341d31aa.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/dc70b943affaad4c216257929958a76b.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/profile-pref.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/profile-pref.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/side-section.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/side-section.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/upload-job/step-container.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/upload-job/step-container.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/upload-job/step-five.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/upload-job/step-five.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/upload-job/step-four.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/upload-job/step-four.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/upload-job/step-six.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/upload-job/step-six.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/upload-job/step-three.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/upload-job/step-three.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/upload-job/step-two.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/dashboard/upload-job/step-two.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/profile/job-suggestions.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/profile/job-suggestions.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/profile/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/profile/profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/profile/saved-jobs.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/profile/saved-jobs.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/profile/side-section.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/profile/side-section.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/d1e0ee94079451272bb6df7a341d31aa.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/d1e0ee94079451272bb6df7a341d31aa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/f1a7518a72de0b92cc70f8ad9375178d.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/f1a7518a72de0b92cc70f8ad9375178d.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -157,6 +255,8 @@
       <path value="$PROJECT_DIR$/vendor/livewire/livewire" />
       <path value="$PROJECT_DIR$/vendor/laravel/sanctum" />
       <path value="$PROJECT_DIR$/vendor/masmerise/livewire-toaster" />
+      <path value="$PROJECT_DIR$/vendor/cocur/slugify" />
+      <path value="$PROJECT_DIR$/vendor/cviebrock/eloquent-sluggable" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -168,34 +268,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "WebServerToolWindowPanel.toolwindow.highlight.mappings": "true",
-    "WebServerToolWindowPanel.toolwindow.highlight.symlinks": "true",
-    "WebServerToolWindowPanel.toolwindow.show.date": "false",
-    "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
-    "WebServerToolWindowPanel.toolwindow.show.size": "false",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/wamp64/www/huntclub",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/wamp64/www/havelihood/resources/views/emails&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\havelihood\resources\views\emails" />
+      <recent name="C:\wamp64\www\havelihood\resources\views\livewire\front\profile" />
+      <recent name="C:\wamp64\www\havelihood\resources\views\components\layouts" />
       <recent name="C:\wamp64\www\havelihood\public\front\assets\images" />
       <recent name="C:\wamp64\www\havelihood\resources\views\livewire\front\auth" />
-      <recent name="C:\wamp64\www\havelihood" />
-      <recent name="C:\wamp64\www\havelihood\public\front" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\havelihood\resources\views\livewire\front\auth\candidate" />
@@ -256,6 +357,50 @@
       <workItem from="1738943964315" duration="708000" />
       <workItem from="1740151183508" duration="15005000" />
       <workItem from="1740433084004" duration="2995000" />
+      <workItem from="1741025724530" duration="13995000" />
+      <workItem from="1741102672614" duration="4300000" />
+      <workItem from="1741121769687" duration="2998000" />
+      <workItem from="1741189691390" duration="20449000" />
+      <workItem from="1741274197848" duration="5348000" />
+      <workItem from="1741362517310" duration="19448000" />
+      <workItem from="1741622608943" duration="1114000" />
+      <workItem from="1741643735408" duration="3194000" />
+      <workItem from="1741706400936" duration="5817000" />
+      <workItem from="1743018640209" duration="7404000" />
+      <workItem from="1743027229470" duration="2219000" />
+      <workItem from="1743088755718" duration="16884000" />
+      <workItem from="1743111708395" duration="3621000" />
+      <workItem from="1743120113120" duration="488000" />
+      <workItem from="1743120663407" duration="194000" />
+      <workItem from="1743120951185" duration="2013000" />
+      <workItem from="1743175728483" duration="8981000" />
+      <workItem from="1743781146309" duration="13198000" />
+      <workItem from="1744039453376" duration="657000" />
+      <workItem from="1744051792400" duration="3734000" />
+      <workItem from="1744127590620" duration="16411000" />
+      <workItem from="1744301956361" duration="17979000" />
+      <workItem from="1744387114794" duration="6433000" />
+      <workItem from="1744816413321" duration="55000" />
+      <workItem from="1745265584751" duration="9255000" />
+      <workItem from="1745337632962" duration="4330000" />
+      <workItem from="1745347613470" duration="3285000" />
+      <workItem from="1745422933211" duration="17649000" />
+      <workItem from="1745508684612" duration="15884000" />
+      <workItem from="1745594540901" duration="9692000" />
+      <workItem from="1745855532687" duration="17962000" />
+      <workItem from="1745955153163" duration="10424000" />
+      <workItem from="1746027726432" duration="14439000" />
+      <workItem from="1746112337248" duration="14773000" />
+      <workItem from="1746199951827" duration="15535000" />
+      <workItem from="1746472434043" duration="13988000" />
+      <workItem from="1746545955543" duration="12733000" />
+      <workItem from="1746642753537" duration="14996000" />
+      <workItem from="1746730699683" duration="10644000" />
+      <workItem from="1746807017113" duration="9073000" />
+      <workItem from="1746818744346" duration="12547000" />
+      <workItem from="1747064551963" duration="25781000" />
+      <workItem from="1747150340549" duration="17019000" />
+      <workItem from="1747238042462" duration="1878000" />
     </task>
     <servers />
   </component>
@@ -290,14 +435,14 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/livewire/front/auth/candidate/user-info.blade.php</url>
-          <line>19</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/livewire/front/dashboard/upload-job/step-three.blade.php</url>
           <line>10</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/components/layouts/main.blade.php</url>
+          <line>88</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

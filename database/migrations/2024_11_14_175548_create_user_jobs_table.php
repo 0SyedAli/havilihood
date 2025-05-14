@@ -26,6 +26,7 @@ return new class extends Migration
             $table->string('benefits');
             $table->mediumText('description');
             $table->text('document')->nullable();
+            $table->foreignId('user_id')->constrained();
             $table->timestamps();
         });
     }

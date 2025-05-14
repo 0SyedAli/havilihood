@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('profile_infos', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained('users');
             $table->mediumText('bio');
             $table->text('skills');
             $table->text('hobbies');

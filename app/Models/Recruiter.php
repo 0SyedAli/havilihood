@@ -8,5 +8,14 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Recruiter extends Model
 {
     use SoftDeletes;
-    //
+    protected $guarded;
+
+    public function company()
+    {
+        return $this->belongsTo(Company::class);
+    }
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

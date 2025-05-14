@@ -54,7 +54,7 @@ class Otp extends Component
         $expiry = now();
 
         if ($otp){
-            if ($expiry  <= $otp->created_at->modify('+10 minutes')){
+            if ($expiry  <= $otp->updated_at->modify('+10 minutes')){
                 if ($otp->otp_code == $this->otp_code){
                     $user = User::where('email',$otp->email)->first();
                     $user->email_verified_at = now();
@@ -63,9 +63,9 @@ class Otp extends Component
                     $otp->save();
                      $this->dispatch('success','user verified successfully');
                      if (isCandidate()){
-                         $this->redirectRoute('user.info',navigate: true);
+                         $this->redirectRoute('user.info');
                      }else{
-                         $this->redirectRoute('employer.info', navigate: true);
+                         $this->redirectRoute('employer.info');
                      }
                 }
                 else{

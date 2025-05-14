@@ -10,18 +10,24 @@ use Livewire\Component;
 class StepFour extends Component
 {
     #[Validate('required|string|max:191')]
-    #[Session]
     public $pay_period = '';
     #[Validate('required|numeric|max_digits:191')]
-    #[Session]
     public $salary_start = '';
     #[Validate('required|numeric|max_digits:191|gt:salary_start')]
-    #[Session]
     public $salary_end = '';
 
     #[Validate('required|array|max:191')]
-    #[Session]
     public $benefits = [];
+
+    public function mount()
+    {
+        if (session()->has('step_four') ){
+            $this->pay_period = \session('step_four')['pay_period'];
+            $this->salary_start = \session('step_four')['salary_start'];
+            $this->salary_end = \session('step_four')['salary_end'];
+            $this->benefits = \session('step_four')['benefits'];
+        }
+    }
 
     #[On('step_next')]
     public function next()

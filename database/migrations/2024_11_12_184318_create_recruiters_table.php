@@ -14,7 +14,10 @@ return new class extends Migration
         Schema::create('recruiters', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained('users');
-            $table->foreignId('company_id')->constrained('companies');
+            $table->foreignId('company_id')->constrained('companies')->nullable();
+            $table->string('job_title');
+            $table->string('work_email');
+            $table->string('phone');
             $table->timestamps();
             $table->softDeletes();
 
