@@ -2,12 +2,15 @@
 
 namespace App\Livewire\Front\Profile;
 
+use App\Models\Education;
+use App\Models\Experience;
 use App\Models\ProfileInfo;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Http;
 use Livewire\Component;
 use Livewire\WithFileUploads;
+use function Livewire\of;
 
 class Profile extends Component
 {
@@ -33,6 +36,7 @@ class Profile extends Component
     {
         $this->user = $user;
 
+
 //        dd($this->user);
         $profile_info = $this->user->profile_info;
         $this->bio = $profile_info?->bio;
@@ -45,6 +49,7 @@ class Profile extends Component
         $this->interested = explode(', ', $profile_info?->interested);
         $this->activity = explode(', ',$profile_info?->activity) ;
     }
+
 
     public function add($title)
     {
@@ -89,6 +94,17 @@ class Profile extends Component
         $this->edit = false;
 
     }
+
+    public function deleteExperience($id){
+        Experience::destroy($id);
+    }
+
+    public function deleteEducation($id){
+        Education::destroy($id);
+    }
+
+
+
 
     public function saveProfile()
     {

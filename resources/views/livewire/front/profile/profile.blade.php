@@ -233,9 +233,9 @@
                                         <h2> ${{$user->profile_info?->salary}}<span>/month</span></h2>
                                         @if(auth()->user()->role == "candidate")
                                             <div class="d-flex align-items-center flex-wrap gap-4">
-                                                <button class="btn2" wire:click="editProfile" wire:loading.remove x-show="$wire.edit" >Edit Profile</button>
+                                                <button class="btn2" wire:click="editProfile" wire:loading.remove  x-show="$wire.edit" >Edit Profile</button>
                                                 <button class="btn2" wire:click="saveProfile" wire:loading.remove x-show=" ! $wire.edit" >Save Profile</button>
-                                                <button  class="btn2 align-items-center" type="button"  wire:loading  >
+                                                <button  class="btn2 align-items-center" type="button" wire:loading  >
                                                     <div  class="spinner-border" role="status" style="margin-top:4px " >
                                                         <span class="visually-hidden">Loading...</span>
                                                     </div>
@@ -300,13 +300,78 @@
                         <textarea rows="10" class="form-control" x-show="!$wire.edit" wire:model="bio"></textarea>
                         <p x-show="$wire.edit" >{{$bio ?? ("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsu") }}</p>
                     </div>
-                    <div class="pd_sec4">
+                    <div class="pd_sec4 ">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
                         <h3>Work Experience</h3>
+                                @if(empty($user->experiences))
                         <h5>xxxx xxxxxxx</h5>
+                                @endif
+                            </div>
+
+                        <button class="btn2" data-bs-target="#experience"  data-bs-toggle="modal" @click="$dispatch('experienceShow')" x-show=" !$wire.edit" >Add Experience</button>
+                        </div>
+                        <div class="mt-3">
+                            @foreach($user->experiences as $experience)
+                                <div class="sjl_item"  >
+                                    <div class=" gy-2 w-100 ">
+                                        <div class="col-md-12 ps-md-0">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <h4> {{$experience->company_name ?? 'Software Engineer' }} </h4>
+                                                    <h6> {{$experience->job_title ?? 'Software Engineer' }} </h6>
+                                                    <p>{{ $experience->description }}</p>
+                                                </div>
+                                                <div class="d-flex justify-content-between gap-3" >
+                                                    <small>{{$experience->start_date}}</small> -
+                                                    <small>{{$experience->end_date ?? "Continue"}}</small>
+                                                    <i class="fa fa-pencil" role="button" data-bs-target="#experience" data-bs-toggle="modal"  @click="$dispatch('experienceEdit', {id : {{$experience->id}}}) " ></i>
+                                                    <i class="fa fa-x" role="button" wire:click="deleteExperience({{$experience->id}})" ></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
+
+
                     </div>
                     <div class="pd_sec4">
-                        <h3>Education</h3>
-                        <h5>xxxx xxxxxxx</h5>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h3>Education</h3>
+                                @if(empty($user->educations))
+                                    <h5>xxxx xxxxxxx</h5>
+                                @endif
+                            </div>
+
+                            <button class="btn2" data-bs-target="#education"  data-bs-toggle="modal" @click="$dispatch('educationShow')" x-show=" !$wire.edit" >Add Education</button>
+                        </div>
+                        <div class="mt-3">
+                        @foreach($user->educations as $education)
+                                    <div class="sjl_item"  >
+                                        <div class=" gy-2 w-100 ">
+                                            <div class="col-md-12 ps-md-0">
+                                                <div class="d-flex justify-content-between">
+                                                    <div>
+                                                        <h4> {{$education->certificate ?? 'Software Engineer' }} </h4>
+                                                        <h6> {{$education->college_name ?? 'Software Engineer' }} </h6>
+                                                        <p>{{ $education->description }}</p>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between gap-3" >
+                                                        <small>{{$education->start_date}} </small>
+                                                        -
+                                                        <small>{{$education->end_date ?? "Continue"}}</small>
+                                                        <i class="fa fa-pencil" role="button"  data-bs-target="#education" data-bs-toggle="modal"  @click="$dispatch('educationEdit', {id : {{$education->id}}}) " ></i>
+                                                        <i class="fa fa-x" role="button" wire:click="deleteEducation({{$education->id}})" ></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        @endforeach
+                        </div>
                     </div>
                     <div class="pd_sec4">
                         <h3>Skills</h3>
@@ -466,10 +531,18 @@
             </div>
         </div>
     </div>
+
+<livewire:front.profile.components.experience-modal />
+<livewire:front.profile.components.education-modal />
+
 </section>
 
 @script
 <script>
+        Livewire.on('closeModal', function (){
+        $('#experience').modal('hide')
+        $('#education').modal('hide')
+    })
     Livewire.on('rendered',function (){
 
         setTimeout(()=>{
