@@ -68,6 +68,7 @@ class ExperienceModal extends Component
 
         $this->modal = false;
         $this->dispatch('closeModal');
+        $this->dispatch('dataUpdated');
         $this->dispatch('success','Experience added ');
     }
 

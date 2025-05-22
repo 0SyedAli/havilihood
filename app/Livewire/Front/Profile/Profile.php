@@ -8,6 +8,7 @@ use App\Models\ProfileInfo;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Http;
+use Livewire\Attributes\On;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 use function Livewire\of;
@@ -143,36 +144,12 @@ class Profile extends Component
         $this->edit = true;
     }
 
+    #[On('dataUpdated')]
     public function render()
     {
         $user = $this->user;
-        $response = Http::withOptions([
-            'verify' => false,
-        ])->withHeaders([
-            'Authorization' => 'Bearer ' . config('services.criteria.api_key'),
-            'Content-Type' => 'application/json',
-        ])->get(config('services.criteria.base_url').'status?orderId=orderId-'.$user->order_package?->id);
-//        ])->get(config('services.criteria.base_url').'status?orderId=OrderId123451');
 
-        $status = json_decode($response);
-        $scores =null;
-
-//dd($status);
-        if ($status->status ?? $status->code == 'Complete'){
-            $responseScore = Http::withOptions([
-                'verify' => false,
-            ])->withHeaders([
-                'Authorization' => 'Bearer ' . config('services.criteria.api_key'),
-                'Content-Type' => 'application/json',
-            ])->get(config('services.criteria.base_url').'scores?orderId=OrderId-'.$user->order_package?->id);
-//            ])->get(config('services.criteria.base_url').'scores?orderId=OrderId123451');
-
-            $scores = json_decode($responseScore);
-
-        }
-//        dd(['packages'=> $status , 'scores'=> $scores]);
-
-        return view('livewire.front.profile.profile', compact('user','status','scores'));
+        return view('livewire.front.profile.profile', compact('user',));
     }
 
     public function rendered()
